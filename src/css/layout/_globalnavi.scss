@@ -1,0 +1,143 @@
+
+/*=========================
+global-navigation active
+==========================*/
+
+#container {
+  position: relative;
+  // height: 100vh;
+  z-index: 2;
+  transition: all 0.5s;
+  
+}
+
+// 表示アニメーション
+.mobile-menu {
+  // ↓メニューを背面に配置した。(固定位置)
+  position: fixed;
+  left: 50%;
+  top: 35%;
+  width: 320px;
+  margin: 0 auto;
+  transform: translate(-50%, -50%);
+  @include min-screen($break_point_pc) {
+    display: none !important;
+  }
+  &__main {
+      padding: 0;
+      // ↓表示を滑らかにした。
+      perspective: 2000px;
+      transform-style: preserve-3d;
+  }
+  &__ttl {
+    opacity: 0;
+  }
+  &__item {
+      list-style: none;
+      display: block;
+      padding: 0 40px;
+      transform: translate3d(0, 0, -1000px);
+      transition: transform 0.3s, opacity 0.2s;
+      opacity: 0;
+  }
+  &__link {
+      display: block;
+      margin-top: 30px;
+      color: $black;
+      text-decoration: none;
+      
+  }
+}
+
+
+.menu-open {
+  /* スマホhーmenu時にスクロール禁止 */
+  overflow: hidden;
+  & #container {
+    opacity: 0;
+    transition: 0.01s ease-in, opacity 0.01s ease-out;
+  }
+  & .mobile-menu {
+
+    z-index: 10;
+      &__ttl {
+        position: relative;
+        display: block;
+        text-align: center;
+        letter-spacing: 0.05em;
+        font-size: 40px;
+        letter-spacing: 0.1em;
+        opacity: 1;
+        transition: 0.2s ease-in, opacity 0.5s ease-out;
+        transform-style: preserve-3d;
+      }
+      &__item {
+          transform: none;
+          opacity: 1;
+          /* $iが1から始まり、5で終わる */
+          @for $i from 1 through 5 {
+              /* 0.07sずつ遅らせて表示させる。(二つ目以降も適用) */
+              &:nth-child(#{$i}) {
+                  transition-delay: $i * 0.07s;
+              }
+          }
+      }
+  }
+}
+
+// ハンバーガーメニュータップopen後に表示されるメニュー　↓
+.mobile-menu__main /* ul */ {
+  display: inline-block;
+  list-style: none;
+  margin-bottom: 5px;
+  width: 100%;
+  .mobile-menu__item /* li */ {
+    position: relative;
+    height: .5em;
+    @include min-screen($break_point_min) {
+      height: 2.5em;
+    }
+    // ボーダーライン↓
+    &::before {
+      position: absolute;
+      content: '';
+      top: 20px;
+      left: 50%;
+      height: 10px;
+      width: 50%;  
+      background-color: rgba(200, 200, 200, 0.5);
+      transform: translateX(-50%);
+      @include min-screen($break_point_min) {
+        top: 95px;
+        width: 74%;
+      }
+    }
+    .mobile-menu__link /* a */ {
+      position: relative;
+      display: block;
+      cursor: pointer;
+      .en-title {
+        top: 0;
+        left: 0;
+        font-weight: 400;
+        font-size: 16px;
+      }
+      .ja-title {
+        position: absolute;
+        display: inline-block;
+        top: 10px;
+        left: 50%;
+        width: 100%;
+        text-align: center;
+        line-height: 1;
+        font-size: 16px;
+        color: $gray;
+        transform: translateX(-50%);
+        @include min-screen($break_point_min) {
+          top: 84px;
+          font-size: 12px;
+        }
+      }
+    }
+  }
+}

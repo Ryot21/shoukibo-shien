@@ -1,0 +1,40 @@
+/* ====================
+ card
+
+<div class="p-card">
+  <figure class="p-card__thumbnail">
+    <img src="" alt="">
+  </figure>
+  <div class="p-card__textbox">
+    <h3 class="p-card__title">
+      タイトル
+    </h3>
+    <p class="p-card__detail">
+      概要がはいります。概要がはいります。概要がはいります。概要がはいります。
+    </p>
+  </div>
+</div>
+
+=======================*/
+
+.p-card {
+  width: 100%;
+
+  &__thumbnail {
+    width: 100%;
+  }
+
+  &__textbox {
+    padding: 20px;
+  }
+
+  &__title {
+    font-size:20px;
+    font-weight: bold;
+  }
+
+  &__detail {
+    font-size:14px;
+    margin-top: 1em;
+  }
+}

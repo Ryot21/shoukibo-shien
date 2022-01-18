@@ -1,0 +1,81 @@
+/* ====================
+
+
+ トップページ > セクション用
+
+
+=======================*/
+.section {
+	&-block {
+		padding: 40px 0;
+		@include min-screen($break_point_max) {
+			padding: 50px 0 70px;
+		}
+		&_title {
+			//font-sizeは、object > utility > _size.scss
+			position: relative;
+			color: $blue;
+			text-align: center;
+			text-shadow: 0px 1px 1px $gray;
+			margin-bottom: 60px;
+
+			&::before {
+				position: absolute;
+				bottom: 5px;
+				left: 50%;
+				transform: translateX(-50%);
+				content: "";
+				width: 50px;
+				height: 2px;
+				background: $blue;
+				@include min-screen($break_point_max) {
+					bottom: 10px;
+				}
+			}
+		}
+		&__btn {
+			display: inline-block;
+			position: relative;
+			left: 50%;
+			transform: translateX(-50%);
+
+			width: 120px;
+			background: $blue;
+			border: 1px solid $blue;
+			border-radius: 30px;
+			overflow: hidden;
+			transition: 0.5s;
+
+			@include min-screen($break_point_max) {
+				width: 150px;
+			}
+			
+			&:hover {
+				background: $color__blue-button;
+				border: 1px solid $color__blue-button;
+			}
+			a {
+				display: block;
+				margin: 5px;
+				text-align: center;
+				font-size: 14px;
+				font-weight: bold;
+				transition: 0.5s;
+				color: $white;
+				@include min-screen($break_point_max) {
+					font-size: 18px;
+				}
+			}
+		}
+
+		&__card {
+			width: 100%;
+			background: $white;
+
+			@include min-screen($break_point_max) {
+				filter: drop-shadow(1px 1px 2px $gray);
+				padding-bottom: 60px;
+			}
+		}
+	}
+}

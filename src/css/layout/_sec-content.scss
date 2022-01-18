@@ -1,0 +1,10 @@
+/*=========================
+l-sec-content
+==========================*/
+
+.l-sec-content {
+	padding: 0 0 30px;
+	 @include min-screen($break_point_pc) {
+	  padding: 0 0 100px;
+	}
+}

@@ -1,0 +1,54 @@
+/* ====================
+
+
+ トップページ > お知らせ
+
+
+=======================*/
+.news-block {
+	&_title {
+		&::after {
+			//font-sizeは、object > utility > _size.scss
+			position: absolute;
+			bottom: -18px;
+			left: 50%;
+			transform: translateX(-50%);
+			content: "お知らせ";
+			@include min-screen($break_point_max) {
+				bottom: -22px;
+			}
+		}
+	}
+}
+
+.news {
+	&-lists {//ul
+		margin-bottom: 45px;
+		@include min-screen($break_point_pc) {
+			max-width: 1200px;
+			padding: 0 100px;
+			margin-bottom: 60px;
+		}
+	}
+	&-list {//li
+		margin-bottom: 5px;
+		&__link {//a
+			display: block;
+			color: $black;
+			line-height: 2.5;
+
+			overflow: hidden;
+			white-space: nowrap;
+			text-overflow: ellipsis;
+			@include min-screen($break_point_pc) {
+				line-height: 2;
+			}
+		}
+		&__day {
+			display: inline-block;
+			margin-right: 20px;
+			// color: #FF9300;
+		}
+	}
+
+}

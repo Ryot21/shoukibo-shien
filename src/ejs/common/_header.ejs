@@ -1,0 +1,128 @@
+<%
+  var _default = json['default'];
+  for ( var key in _default ) {
+    if ( typeof page[key] === 'undefined' ) {
+      page[key] = _default[key];
+    }
+  }
+-%>
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="keywords" content="<%= page['keywords'] %>">
+    <meta name="description" content="<%= page['description'] %>">
+    <title><%= page['title'] %></title>
+
+    <link rel="alternate" hreflang="ja" href="<%= page['canonical'] %>">
+
+    <% if (page['bodyclass'] === 'thanks') { %>
+    <meta name="robots" content="noindex,nofollow">
+    <% } else { %>
+
+    <!-- ogp -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="<%= page['canonical'] %>">
+    <meta property="og:description" content="<%= page['description'] %>">
+    <meta property="og:image" content="">
+    <meta property="og:title" content="<%= page['title'] %>">
+    <meta property="og:site_name" content="">
+    <!-- /ogp -->
+    <% } %>
+      <!-- swiper関連 -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/css/swiper.min.css">
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.min.js"></script>
+      <!-- // swiper関連 -->
+      
+    <link rel="stylesheet" type="text/css" href="/css/style.css">
+  </head>
+  <body class="<%= page['bodyclass'] %>">
+    <div class="l-wrapper">
+
+      <header id="header" class="l-header l-header--fixed">
+        <div class="l-header__inner">
+          <div class="c-header__wrap">
+
+            <!-- サイトロゴ -->
+            <h1 class="c-header__logo">
+              <img src="../images/logo/webitch-logo.svg" alt="一般社団法人 小規模事業者支援協会">
+            </h1>
+            <!-- ヘッダーナビ ブロック -->
+            <nav class="c-header__navbox">
+
+              <ul class="c-header__navbox__left">
+                  <li class="c-header__navbox__left__menu">
+                    <a href="#">TOP</a>
+                  </li>
+                  <li class="c-header__navbox__left__menu">
+                    <a href="#">活動内容</a>
+                  </li>
+                  <li class="c-header__navbox__left__menu">
+                    <a href="#">協会概要</a>
+                  </li>
+                  <li class="c-header__navbox__left__menu">
+                    <a href="#">お知らせ</a>
+                  </li>
+                  <li class="c-header__navbox__left__menu">
+                    <a href="#">コラム</a>
+                  </li>
+              </ul>
+              <div class="c-header__navbox__right">
+                <div class="c-header__navbox__right__menu member-box">
+                  <a href="#">会員登録</a>
+                </div>
+                <div class="c-header__navbox__right__menu contact-box">
+                  <a href="#">お問い合わせ</a>
+                </div>
+              </div>
+            </nav>
+
+
+
+            <!--ハンバーガーメニュー -->
+            <div id="js-menuToggle" class="gnav-btn">
+              <div class="gnav-btn__container">
+                <span></span>
+                <span></span>
+                <span></span>
+                <!-- <p>MENU</p> -->
+              </div>
+            </div>
+            <!-- ハンバーガーメニュー / モバイルメニュー -->
+            <div id="js-menu" class="mobile-menu">
+              <!-- <h2 class="mobile-menu__ttl">menu</h2> -->
+              <ul class="mobile-menu__main">
+                  <li class="mobile-menu__item">
+                      <a class="mobile-menu__link" href="/about/">
+                          <span class="ja-title">TOP</span>
+                      </a>
+                  </li>
+                  <li class="mobile-menu__item">
+                      <a class="mobile-menu__link" href="/work/">
+                          <span class="ja-title">活動内容</span>
+                      </a>
+                  </li>
+                  <li class="mobile-menu__item">
+                      <a class="mobile-menu__link" href="/blog/">
+                          <span class="ja-title">協会概要</span>
+                      </a>
+                  </li>
+                  <li class="mobile-menu__item">
+                    <a class="mobile-menu__link" href="/blog/">
+                        <span class="ja-title">お知らせ</span>
+                    </a>
+                  </li>
+                  <li class="mobile-menu__item">
+                    <a class="mobile-menu__link" href="/blog/">
+                        <span class="ja-title">コラム</span>
+                    </a>
+                  </li>
+
+              </ul>
+            </div>
+          </div>
+        </div>
+      </header>

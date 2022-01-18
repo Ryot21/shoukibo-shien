@@ -1,0 +1,41 @@
+@mixin font_size ($n) {
+  @for $i from 8 through $n {
+    .u-fs-#{$i} {
+      font-size: #{$i}px !important;
+      @include min-screen($break_point_min) {
+        font-size: 16px;
+      }
+    }
+  }
+}
+@include font_size(40);//MAX40まで
+
+
+// TOPページ > 
+.section-block_title,
+.worries-block_title,
+.activity-block_title {
+    font-size: 23px;
+    @include min-screen($break_point_min) {
+      font-size: 40px;
+    }
+}
+
+.news-block_title,
+.intro-block_title,
+.activity-block_title {
+  &::after {
+    font-size :10px;
+		@include min-screen($break_point_max) {
+			font-size :16px;
+		}
+  }
+}
+
+.worries-block_flex__right__title,
+.activity-item__title {
+  font-size: 16px;
+  @include min-screen($break_point_max) {
+    font-size: 25px;
+  }
+}

@@ -1,0 +1,66 @@
+{
+  "default": {
+    "bodyclass": "index",
+    "title": "default title",
+    "description": "",
+    "canonical": "",
+    "keywords": ""
+  },
+
+  "home": {
+    "bodyclass": "index",
+    "title": "株式会社webitch | 埼玉県狭山市に拠点を置くweb制作会社",
+    "description": "web制作、メディア運営、webマーケティング、イベント企画を行っている会社です。",
+    "canonical": "/",
+    "keywords": "株式会社webitch, 狭山市, web制作, メディア"
+  },
+
+  "about": {
+    "bodyclass": "about",
+    "title": "株式会社webitch | about",
+    "description": "web制作、メディア運営、webマーケティング、イベント企画を行っている会社です。",
+    "canonical": "/about/",
+    "keywords": "株式会社webitch, 狭山市, web制作, メディア, about"
+  },
+
+  "service": {
+    "bodyclass": "service",
+    "title": "株式会社webitch | サービス",
+    "description": "web制作、メディア運営、webマーケティング、イベント企画を行っている会社です。",
+    "canonical": "/service/",
+    "keywords": "株式会社webitch, 狭山市, web制作, メディア, service"
+  },
+
+  "work": {
+    "bodyclass": "work",
+    "title": "株式会社webitch | 制作実績",
+    "description": "web制作、メディア運営、webマーケティング、イベント企画を行っている会社です。",
+    "canonical": "/work/",
+    "keywords": "株式会社webitch, 狭山市, web制作, メディア, 制作実績"
+  },
+
+  "blog": {
+    "bodyclass": "blog",
+    "title": "株式会社webitch | ブログ",
+    "description": "web制作、メディア運営、webマーケティング、イベント企画を行っている会社です。",
+    "canonical": "/blog/",
+    "keywords": "株式会社webitch, 狭山市, web制作, メディア, ブログ"
+  },
+
+  "contact": {
+    "bodyclass": "contact",
+    "title": "株式会社webitch | お問い合わせ",
+    "description": "web制作、メディア運営、webマーケティング、イベント企画を行っている会社です。",
+    "canonical": "/contact/",
+    "keywords": "株式会社webitch, 狭山市, web制作, メディア, お問い合わせ"
+  },
+
+  "thanks": {
+    "bodyclass": "thanks",
+    "title": "株式会社webitch | お問い合わせありがとうございます。",
+    "description": "web制作、メディア運営、webマーケティング、イベント企画を行っている会社です。",
+    "canonical": "/contact/thanks/",
+    "keywords": "株式会社webitch, 狭山市, web制作, メディア, お問い合わせ"
+  }
+
+}

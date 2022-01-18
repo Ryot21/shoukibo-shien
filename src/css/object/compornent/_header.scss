@@ -1,0 +1,142 @@
+/* ====================
+header
+
+  <nav class="c-header">
+      <ul class="c-header__gnav">
+        <li class="c-header__menu">
+          <a href="#">メニュー1</a>
+        </li>
+        <li class="c-header__menu">
+          <a href="#">メニュー2</a>
+        </li>
+        <li class="c-header__menu">
+          <a href="#">メニュー3</a>
+        </li>
+      </ul>
+  </nav>
+
+
+=======================*/
+.member-box {
+  background: $blue;
+  border: 1px solid $blue;
+  &:hover {
+    background: $color__blue-button;
+    border: 1px solid $color__blue-button;
+  }
+  a {
+    color: $white;
+  }
+}
+.contact-box {
+  background: $white;
+  border: 1px solid $blue;
+  &:hover {
+    border: 1px solid $color__blue-button;
+    a {
+      color: $color__blue-button;
+    }
+  }
+  a {
+    color: $blue;
+  }
+}
+
+.c-header {
+  &__wrap {
+    @include min-screen($break_point_max) {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+  }
+  &__navbox {
+    @include min-screen($break_point_max) {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+    &__left {
+      display: none;
+      @include min-screen($break_point_max) {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        list-style: none;
+      }
+      &__menu {
+        position: relative;
+        margin: 0 5px;
+        overflow: hidden;
+        &::after {
+          position: absolute;
+          content: '';
+          top: 28px;
+          left: 0;
+          height: 2px;
+          width: 100% !important;
+          transition: 0.5s;
+          animation: SlideOut 0.5s;
+        }
+        &:hover {
+          &::after {
+            width: 78%;
+            background-color: $color__blue-button;
+            margin-top: 1px;
+            transition: 0.5s;
+            animation: SlideIn 0.5s;
+          }
+        }
+        a {
+          font-size: 14px;
+          font-weight: bold;
+          &:hover {
+            color: $color__blue-button;
+          }
+        }
+      }
+    }
+    &__right {
+      display: none;
+      @include min-screen($break_point_max) {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        list-style: none;
+        padding-left: 10px;
+      }
+      &__menu {
+        width: 120px;
+        position: relative;
+        margin: 10px 5px;
+        border-radius: 30px;
+        overflow: hidden;
+        transition: 0.5s;
+        &:hover {
+          transition: 0.5s;
+        }
+        a {
+          display: block;
+          margin: 5px;
+          text-align: center;
+          font-size: 14px;
+          font-weight: bold;
+          transition: 0.5s;
+          &:hover {
+            // opacity: 0.8;
+            transition: 0.5s;
+          }
+        }
+      }
+    }
+  }
+  &__logo {
+    width: 120px;
+    @include min-screen($break_point_max) {
+      width: 170px;
+    }
+  }
+
+}

@@ -1,0 +1,26 @@
+/* ====================
+ breadcrumb
+
+<ul class="c-breadcrumb">
+  <li class="c-breadcrumb__item"><a  class="c-breadcrumb__link" href="/">ホーム</a></li>
+  <li class="c-breadcrumb__item>カレントページタイトル</li>
+</ul>
+
+=======================*/
+
+.c-breadcrumb {
+    
+    &__item {
+      display: inline-block;
+      &:not(:last-child) {
+        &::after {
+          content: ">";
+          padding: 0 5px;
+        }
+      }
+    }
+
+    &__link {
+      text-decoration: none;
+    }
+  }
