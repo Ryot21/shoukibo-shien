@@ -19,14 +19,40 @@
 
 .p-card {
   width: 100%;
-
-  &__thumbnail {
+  background: $white;
+  filter: drop-shadow(1px 1px 2px $gray);
+  @include max-screen($break_point_max) {
+    margin-bottom: 50px;
+  }
+  @include min-screen($break_point_max) {
+    width: calc(33.3333% - 20px);
+    margin: 0 10px;
+  }
+  &:last-child {
+    @include max-screen($break_point_max) {
+      margin-bottom: 10px;
+    }
+  }
+  &_thumbnail {
     width: 100%;
   }
-
-  &__textbox {
-    padding: 20px;
+  &_data {
+    position: relative;
+    color: $black;
+    padding: 10px 15px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    &__day {
+      font-weight: bold;
+    }
+    &__text {
+      color: $blue;
+      font-weight: bold;
+    }
   }
+
+
 
   &__title {
     font-size:20px;

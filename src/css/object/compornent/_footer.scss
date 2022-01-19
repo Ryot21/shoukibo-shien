@@ -1,0 +1,91 @@
+/* ====================
+header
+
+  <nav class="c-header">
+      <ul class="c-header__gnav">
+        <li class="c-header__menu">
+          <a href="#">メニュー1</a>
+        </li>
+        <li class="c-header__menu">
+          <a href="#">メニュー2</a>
+        </li>
+        <li class="c-header__menu">
+          <a href="#">メニュー3</a>
+        </li>
+      </ul>
+  </nav>
+
+
+=======================*/
+
+.c-footer {
+  &__navbox {//ul
+    background: $white;
+    border-bottom: 1px solid $gray;
+    text-align: center;
+    align-items: center;
+    margin-bottom: 20px;
+    @include min-screen($break_point_max) {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      width: 1000px;
+      padding: 0 0 10px;
+      margin: auto;
+      margin-bottom: 20px;
+    }
+    &__menu {//li
+      position: relative;
+      font-size: 12px;
+      overflow: hidden;
+      @include max-screen($break_point_max) {
+        padding-bottom: 15px;
+      }
+      @include min-screen($break_point_max) {
+        border-right: 1px solid $gray;
+      }
+      &:last-child {
+        @include min-screen($break_point_max) {
+          border-right: none;
+        }
+      }
+      &::after {
+        position: absolute;
+        content: '';
+        top: 21px;
+        left: 0;
+        height: 2px;
+        width: 100% !important;
+        transition: 0.5s;
+        animation: SlideOut 0.5s;
+      }
+      &:hover {
+        &::after {
+          width: 78%;
+          background-color: $color__blue-button;
+          margin-top: 1px;
+          transition: 0.5s;
+          animation: SlideIn 0.5s;
+        }
+      }
+      a {
+        padding: 0 20px;
+      }
+    }
+  }
+  &__logo {
+    width: 120px;
+    margin: 0 auto 20px;
+    @include min-screen($break_point_max) {
+      width: 150px;
+      margin: auto;
+
+    }
+  }
+  &__copy {
+    color: $lightblack;
+    text-align: center;
+    align-items: center;
+    background: $lightwhite;
+  }
+}

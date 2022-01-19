@@ -38,7 +38,6 @@
 			position: relative;
 			left: 50%;
 			transform: translateX(-50%);
-
 			width: 120px;
 			background: $blue;
 			border: 1px solid $blue;
@@ -67,7 +66,42 @@
 				}
 			}
 		}
-
+		&_flex {
+			display: flex;
+			flex-wrap: wrap;
+			align-items: center;
+			justify-content: space-around;
+			&__btn {
+				display: inline-block;
+				width: 120px;
+				background: $blue;
+				border: 1px solid $blue;
+				border-radius: 30px;
+				overflow: hidden;
+				transition: 0.5s;
+	
+				@include min-screen($break_point_max) {
+					width: 150px;
+				}
+				
+				&:hover {
+					background: $color__blue-button;
+					border: 1px solid $color__blue-button;
+				}
+				a {
+					display: block;
+					margin: 5px;
+					text-align: center;
+					font-size: 14px;
+					font-weight: bold;
+					transition: 0.5s;
+					color: $white;
+					@include min-screen($break_point_max) {
+						font-size: 18px;
+					}
+				}
+			}
+		}
 		&__card {
 			width: 100%;
 			background: $white;

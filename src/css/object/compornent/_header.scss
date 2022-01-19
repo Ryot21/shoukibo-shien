@@ -29,16 +29,17 @@ header
   }
 }
 .contact-box {
-  background: $white;
-  border: 1px solid $blue;
+  color: $blue !important;
+  background: $white !important;
+  border: 1px solid $blue !important;
   &:hover {
-    border: 1px solid $color__blue-button;
+    border: 1px solid $color__blue-button !important;
     a {
-      color: $color__blue-button;
+      color: $color__blue-button !important;
     }
   }
   a {
-    color: $blue;
+    color: $blue !important;
   }
 }
 

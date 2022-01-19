@@ -23,7 +23,9 @@
 
 .news-block_title,
 .intro-block_title,
-.activity-block_title {
+.activity-block_title,
+.partner-block_title,
+.column-block_title {
   &::after {
     font-size :10px;
 		@include min-screen($break_point_max) {
@@ -33,9 +35,21 @@
 }
 
 .worries-block_flex__right__title,
-.activity-item__title {
+.activity-item__title,
+.contact-block_flex__right__title,
+.partner-block_flex__right__title {
   font-size: 16px;
   @include min-screen($break_point_max) {
+    font-size: 20px;
+  }
+  @include min-screen($break_point_pc) {
     font-size: 25px;
+  }
+}
+
+.f-copy {
+  font-size: 10px;
+  @include min-screen($break_point_max) {
+    font-size: 12px;
   }
 }

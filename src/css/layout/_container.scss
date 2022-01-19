@@ -5,20 +5,55 @@ l-container
 .l-container {
   margin: 0 auto;
   padding: 60px 0 0;
-background: chocolate;
+  background: $white;
   // padding: 0 $content_padding_sp;
   @include clearfix;
   @include min-screen($break_point_max) {
     padding: 100px 0 0;
   }
-
   &__inner {
-background: rgb(125, 182, 50);
-
+    // background: rgb(125, 182, 50);
     padding: 0 $content_padding_sp;
     margin: auto;
 		@include min-screen($break_point_pc) {
 			max-width: 1200px;
 		}
+  }
+}
+
+.l-container_sec {
+  margin: 0 auto;
+  padding: 60px 0 0;
+  background: rgb(168, 206, 255);
+  @include clearfix;
+  @include min-screen($break_point_max) {
+    padding: 100px 0 0;
+  }
+  &__inner {
+    padding: 0 $content_padding_sp;
+    margin: auto;
+    @include min-screen($break_point_pc) {
+      max-width: 1200px;
+    }
+  }
+}
+
+.l-container_thr {
+  margin: 0 auto;
+  padding: 0px 0 0;
+  background: $lightwhite;
+  // padding: 0 $content_padding_sp;
+  @include clearfix;
+  @include min-screen($break_point_max) {
+    padding: 0px 0 0;
+  }
+  &__inner {
+    // background: rgb(168, 206, 255);
+    
+    padding: 0 $content_padding_sp;
+    margin: auto;
+    @include min-screen($break_point_pc) {
+      max-width: 1200px;
+    }
   }
 }

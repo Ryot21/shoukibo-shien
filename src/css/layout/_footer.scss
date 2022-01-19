@@ -5,3 +5,26 @@ l-footer
     フッターコンテンツ
 </footer>
 ==========================*/
+.l-footer {
+	width: 100%;
+	// height: 470px;
+	margin: auto;
+	background-color: $white;
+
+	@include min-screen($break_point_max) {
+		// height: 176px;
+	}
+
+	&__inner {
+		padding: 40px 10px 0;
+		@include min-screen($break_point_max) {
+			padding: 18px 90px;
+			margin: 0 auto;
+		}
+		@include min-screen($break_point_pc) {
+			max-width: 1200px;
+		}
+	}
+
+
+}

@@ -1,0 +1,110 @@
+/* ====================
+
+
+ トップページ > パートナー
+
+
+=======================*/
+.partner-block {
+    text-align: center;
+	padding: 30px 0 60px;
+
+	&_title {
+		&::after {
+			//font-sizeは、object > utility > _size.scss
+			position: absolute;
+			bottom: -18px;
+			left: 50%;
+			transform: translateX(-50%);
+			content: "パートナー";
+			@include min-screen($break_point_max) {
+				bottom: -22px;
+			}
+		}
+	}
+	&_flex {
+		display: flex;
+		// flex-direction: column-reverse;
+		flex-wrap: wrap;
+		align-items: center;
+		@include min-screen($break_point_max) {
+			justify-content: space-between;
+			flex-direction: row;
+			padding: 0 50px;
+		}
+		&__left {
+			padding: 0 10px 30px;
+			width: 100%;
+			@include min-screen($break_point_max) {
+				width: 40%;
+				padding: 0 20px;
+			}
+			@include min-screen($break_point_pc) {
+				width: 30%;
+				padding: 0 20px;
+			}
+			&__img {
+				width: 250px;
+				height: 250px;
+				margin: auto;
+				border-radius: 50%;
+				filter: drop-shadow(1px 1px 2px $gray);
+				overflow: hidden;
+				@include min-screen($break_point_max) {
+					width: 210px;
+					height: 210px;
+				}
+				@include min-screen($break_point_pc) {
+					width: 250px;
+					height: 250px;
+				}
+			}
+		}
+		&__right {
+			padding: 0 10px;
+			@include min-screen($break_point_max) {
+				width: 60%;
+				padding: 0 20px;
+			}
+			@include min-screen($break_point_pc) {
+				width: 70%;
+				padding: 0 20px;
+			}
+			&__title {
+				//font-sizeは、object > utility > _size.scss
+				font-weight: bold;
+				text-align: center;
+				line-height: 1.4;
+				padding-bottom:20px;
+				@include min-screen($break_point_max) {
+					text-align: start;
+					padding-bottom:30px;
+				}
+			}
+			&__text {
+				text-align: start;
+				padding-bottom:10px;
+				@include min-screen($break_point_max) {
+					padding-bottom:30px;
+				}
+			}
+
+		}
+
+	}
+}
+
+.partner {
+	&-lists {//ul
+	}
+	&-list {//li
+		margin-bottom: 15px;
+		@include min-screen($break_point_max) {
+			margin-bottom: 35px;
+		}
+
+		&__link {//a
+
+		}
+	}
+}
