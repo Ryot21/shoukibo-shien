@@ -24,7 +24,7 @@ l-container
 .l-container_sec {
   margin: 0 auto;
   padding: 60px 0 0;
-  background: rgb(168, 206, 255);
+  background: #CCE3ED;
   @include clearfix;
   @include min-screen($break_point_max) {
     padding: 100px 0 0;

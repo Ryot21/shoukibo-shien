@@ -29,7 +29,7 @@ header
       display: flex;
       justify-content: center;
       flex-wrap: wrap;
-      width: 1000px;
+      max-width: 1000px;
       padding: 0 0 10px;
       margin: auto;
       margin-bottom: 20px;
@@ -61,11 +61,13 @@ header
       }
       &:hover {
         &::after {
-          width: 78%;
-          background-color: $color__blue-button;
-          margin-top: 1px;
-          transition: 0.5s;
-          animation: SlideIn 0.5s;
+          @include min-screen($break_point_max) {
+            width: 78%;
+            background-color: $color__blue-button;
+            margin-top: 1px;
+            transition: 0.5s;
+            animation: SlideIn 0.5s;
+          }
         }
       }
       a {
