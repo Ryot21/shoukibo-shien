@@ -73,14 +73,14 @@
 			background-size: cover;
 			background-position: center;
 			&__title {//h2
-				color: $blue;
+				color: $white;
 				position: absolute;
-				top: 40%;
+				top: 45%;
 				left: 50%;
 				transform: translate(-50%, -50%);
 				opacity: 0;
 
-				text-shadow: 1px 1px 5px $white;
+				text-shadow: 2px 2px 4px $blue;
 				&::before {
 					position: absolute;
 					bottom: 5px;
@@ -89,7 +89,7 @@
 					content: "";
 					width: 50px;
 					height: 2px;
-					background: $blue;
+					background: $white;
 					@include min-screen($break_point_max) {
 						bottom: 10px;
 					}
@@ -115,7 +115,7 @@
 			// background-image: url(./images/top/flag_navy.png);
 		}
 		&__outline {
-			// background-image: url(./images/top/flag_navy.png);
+			background-image: url(../images/mainvisual/page-outline-header.jpeg);
 		}
 		&__news {
 			background-image: url(../images/mainvisual/page-news-header.jpeg);
@@ -143,7 +143,7 @@
 
 .outline {
 	.c-mv-top__outline {
-		opacity: .8 !important;
+		opacity: .7 !important;
 		&__title {//h2
 			opacity: 1 !important;
 		}
@@ -161,7 +161,7 @@
 
 .column {
 	.c-mv-top__column {
-		opacity: .8 !important;
+		opacity: .7 !important;
 		&__title {//h2
 			opacity: 1 !important;
 		}
