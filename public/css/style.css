@@ -1090,7 +1090,6 @@ heading
 =======================*/
 
 .index .c-mv-top {
-  background: aliceblue;
   position: relative;
   height: 218px;
 }
@@ -1112,6 +1111,16 @@ heading
 .contact .c-mv-top {
   background: #f0fff4;
   position: relative;
+  height: 218px;
+}
+
+.activity .c-mv-top_bg,
+.outline .c-mv-top_bg,
+.news .c-mv-top_bg,
+.column .c-mv-top_bg,
+.membership .c-mv-top_bg,
+.contact .c-mv-top_bg {
+  background-color: #373737;
   height: 218px;
 }
 
@@ -1309,8 +1318,17 @@ heading
   background-image: url(../images/mainvisual/page-news-header.jpeg);
 }
 
+.activity .c-mv-top__column,
+.outline .c-mv-top__column,
+.news .c-mv-top__column,
+.column .c-mv-top__column,
+.membership .c-mv-top__column,
+.contact .c-mv-top__column {
+  background-image: url(../images/mainvisual/page-column-header.jpeg);
+}
+
 .activity .c-mv-top__activity {
-  opacity: 1 !important;
+  opacity: .8 !important;
 }
 
 .activity .c-mv-top__activity__title {
@@ -1318,7 +1336,7 @@ heading
 }
 
 .outline .c-mv-top__outline {
-  opacity: 1 !important;
+  opacity: .8 !important;
 }
 
 .outline .c-mv-top__outline__title {
@@ -1326,7 +1344,7 @@ heading
 }
 
 .news .c-mv-top__news {
-  opacity: 1 !important;
+  opacity: .8 !important;
 }
 
 .news .c-mv-top__news__title {
@@ -1334,7 +1352,7 @@ heading
 }
 
 .column .c-mv-top__column {
-  opacity: 1 !important;
+  opacity: .8 !important;
 }
 
 .column .c-mv-top__column__title {
@@ -1342,7 +1360,7 @@ heading
 }
 
 .membership .c-mv-top__membership {
-  opacity: 1 !important;
+  opacity: .8 !important;
 }
 
 .membership .c-mv-top__membership__title {
@@ -1350,7 +1368,7 @@ heading
 }
 
 .contact .c-mv-top__contact {
-  opacity: 1 !important;
+  opacity: .8 !important;
 }
 
 .contact .c-mv-top__contact__title {
@@ -1701,6 +1719,7 @@ article
 
  トップページ > コラム
 
+ コラム一覧ページ
 
 =======================*/
 
@@ -1862,6 +1881,7 @@ article
 
  トップページ > お知らせ
 
+ お知らせ一覧ページ
 
 =======================*/
 
@@ -2855,6 +2875,11 @@ article
     margin: 0 10px;
   }
 
+  .column .p-card {
+    width: calc(33.3333% - 20px);
+    margin: 0 10px 50px;
+  }
+
   .section-block {
     padding: 50px 0 70px;
   }
@@ -3149,6 +3174,15 @@ article
   .column .c-mv-top,
   .membership .c-mv-top,
   .contact .c-mv-top {
+    height: 341px;
+  }
+
+  .activity .c-mv-top_bg,
+  .outline .c-mv-top_bg,
+  .news .c-mv-top_bg,
+  .column .c-mv-top_bg,
+  .membership .c-mv-top_bg,
+  .contact .c-mv-top_bg {
     height: 341px;
   }
 

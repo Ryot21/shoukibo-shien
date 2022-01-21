@@ -51,16 +51,21 @@
       font-weight: bold;
     }
   }
-
-
-
   &__title {
     font-size:20px;
     font-weight: bold;
   }
-
   &__detail {
     font-size:14px;
     margin-top: 1em;
+  }
+}
+
+.column {
+  .p-card {
+    @include min-screen($break_point_max) {
+      width: calc(33.3333% - 20px);
+      margin: 0 10px 50px;
+    }
   }
 }

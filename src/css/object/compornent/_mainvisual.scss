@@ -16,13 +16,14 @@
 .index {
 	.c-mv-top {
 		// 削除予定
-		background: aliceblue;
+		
 		// /削除予定
 		position: relative;
 		height: 218px;
 		@include min-screen($break_point_min) {
 			height: 805px;
 		}
+
 		&__activity,
 		&__outline,
 		&__news,
@@ -50,7 +51,13 @@
 		@include min-screen($break_point_min) {
 			height: 341px;
 		}
-
+		&_bg {
+			background-color: $black;
+			height: 218px;
+			@include min-screen($break_point_min) {
+				height: 341px;
+			}
+		}
 		&__activity,
 		&__outline,
 		&__news,
@@ -114,7 +121,7 @@
 			background-image: url(../images/mainvisual/page-news-header.jpeg);
 		}
 		&__column {
-			// background-image: url(./images/top/flag_navy.png);
+			background-image: url(../images/mainvisual/page-column-header.jpeg);
 		}
 		&__membership {
 			// background-image: url(./images/top/flag_navy.png);
@@ -127,7 +134,7 @@
 
 .activity {
 	.c-mv-top__activity {
-		opacity: 1 !important;
+		opacity: .8 !important;
 		&__title {//h2
 			opacity: 1 !important;
 		}
@@ -136,7 +143,7 @@
 
 .outline {
 	.c-mv-top__outline {
-		opacity: 1 !important;
+		opacity: .8 !important;
 		&__title {//h2
 			opacity: 1 !important;
 		}
@@ -145,7 +152,7 @@
 
 .news {
 	.c-mv-top__news {
-		opacity: 1 !important;
+		opacity: .8 !important;
 		&__title {//h2
 			opacity: 1 !important;
 		}
@@ -154,7 +161,7 @@
 
 .column {
 	.c-mv-top__column {
-		opacity: 1 !important;
+		opacity: .8 !important;
 		&__title {//h2
 			opacity: 1 !important;
 		}
@@ -163,7 +170,7 @@
 
 .membership {
 	.c-mv-top__membership {
-		opacity: 1 !important;
+		opacity: .8 !important;
 		&__title {//h2
 			opacity: 1 !important;
 		}
@@ -172,7 +179,7 @@
 
 .contact {
 	.c-mv-top__contact {
-		opacity: 1 !important;
+		opacity: .8 !important;
 		&__title {//h2
 			opacity: 1 !important;
 		}
