@@ -3,20 +3,20 @@
 global-navigation active
 ==========================*/
 
-#container {
+#container,
+.l-header,
+.page-top__btn,
+.l-container {
   position: relative;
-  // height: 100vh;
-  z-index: 2;
-  transition: all 0.5s;
+  transition: all .5s;
   
 }
-
 // 表示アニメーション
 .mobile-menu {
   // ↓メニューを背面に配置した。(固定位置)
   position: fixed;
   left: 50%;
-  top: 35%;
+  top: 45%;
   width: 320px;
   margin: 0 auto;
   transform: translate(-50%, -50%);
@@ -53,9 +53,13 @@ global-navigation active
 .menu-open {
   /* スマホhーmenu時にスクロール禁止 */
   overflow: hidden;
-  & #container {
+  & #container,
+  .l-container,
+  .l-container_sec,
+  .l-container_thr,
+  .l-footer {
     opacity: 0;
-    transition: 0.01s ease-in, opacity 0.01s ease-out;
+    transition: all .1s;
   }
   & .mobile-menu {
 

@@ -606,16 +606,18 @@ l-footer
 global-navigation active
 ==========================*/
 
-#container {
+#container,
+.l-header,
+.page-top__btn,
+.l-container {
   position: relative;
-  z-index: 2;
-  transition: all 0.5s;
+  transition: all .5s;
 }
 
 .mobile-menu {
   position: fixed;
   left: 50%;
-  top: 35%;
+  top: 45%;
   width: 320px;
   margin: 0 auto;
   -webkit-transform: translate(-50%, -50%);
@@ -658,9 +660,13 @@ global-navigation active
   overflow: hidden;
 }
 
-.menu-open #container {
+.menu-open #container,
+.menu-open .l-container,
+.menu-open .l-container_sec,
+.menu-open .l-container_thr,
+.menu-open .l-footer {
   opacity: 0;
-  transition: 0.01s ease-in, opacity 0.01s ease-out;
+  transition: all .1s;
 }
 
 .menu-open .mobile-menu {
