@@ -94,25 +94,11 @@
 						bottom: 10px;
 					}
 				}
-				&::after {
-					//font-sizeは、object > utility > _size.scss
-					position: absolute;
-					bottom: -18px;
-					// top: 50%;
-					left: 50%;
-					transform: translateX(-50%);
-					// transform: translate(-50%, -50%);
-					content: "お知らせ";
-					width: 100%;
-					text-align: center;
-					@include min-screen($break_point_max) {
-						bottom: -22px;
-					}
-				}
+
 			}
 		}
 		&__activity {
-			// background-image: url(./images/top/flag_navy.png);
+			background-image: url(../images/mainvisual/page-outline-header.jpeg);
 		}
 		&__outline {
 			background-image: url(../images/mainvisual/page-outline-header.jpeg);
@@ -134,9 +120,24 @@
 
 .activity {
 	.c-mv-top__activity {
-		opacity: .8 !important;
+		opacity: .7 !important;
 		&__title {//h2
 			opacity: 1 !important;
+			&::after {
+				//font-sizeは、object > utility > _size.scss
+				position: absolute;
+				bottom: -18px;
+				// top: 50%;
+				left: 50%;
+				transform: translateX(-50%);
+				// transform: translate(-50%, -50%);
+				content: "活動内容";
+				width: 100%;
+				text-align: center;
+				@include min-screen($break_point_max) {
+					bottom: -22px;
+				}
+			}
 		}
 	}
 }
@@ -146,6 +147,21 @@
 		opacity: .7 !important;
 		&__title {//h2
 			opacity: 1 !important;
+			&::after {
+				//font-sizeは、object > utility > _size.scss
+				position: absolute;
+				bottom: -18px;
+				// top: 50%;
+				left: 50%;
+				transform: translateX(-50%);
+				// transform: translate(-50%, -50%);
+				content: "協会概要";
+				width: 100%;
+				text-align: center;
+				@include min-screen($break_point_max) {
+					bottom: -22px;
+				}
+			}
 		}
 	}
 }
@@ -155,6 +171,21 @@
 		opacity: .8 !important;
 		&__title {//h2
 			opacity: 1 !important;
+			&::after {
+				//font-sizeは、object > utility > _size.scss
+				position: absolute;
+				bottom: -18px;
+				// top: 50%;
+				left: 50%;
+				transform: translateX(-50%);
+				// transform: translate(-50%, -50%);
+				content: "お知らせ";
+				width: 100%;
+				text-align: center;
+				@include min-screen($break_point_max) {
+					bottom: -22px;
+				}
+			}
 		}
 	}
 }
@@ -164,6 +195,21 @@
 		opacity: .7 !important;
 		&__title {//h2
 			opacity: 1 !important;
+			&::after {
+				//font-sizeは、object > utility > _size.scss
+				position: absolute;
+				bottom: -18px;
+				// top: 50%;
+				left: 50%;
+				transform: translateX(-50%);
+				// transform: translate(-50%, -50%);
+				content: "コラム";
+				width: 100%;
+				text-align: center;
+				@include min-screen($break_point_max) {
+					bottom: -22px;
+				}
+			}
 		}
 	}
 }
@@ -173,6 +219,21 @@
 		opacity: .8 !important;
 		&__title {//h2
 			opacity: 1 !important;
+			&::after {
+				//font-sizeは、object > utility > _size.scss
+				position: absolute;
+				bottom: -18px;
+				// top: 50%;
+				left: 50%;
+				transform: translateX(-50%);
+				// transform: translate(-50%, -50%);
+				content: "会員登録";
+				width: 100%;
+				text-align: center;
+				@include min-screen($break_point_max) {
+					bottom: -22px;
+				}
+			}
 		}
 	}
 }
@@ -182,6 +243,21 @@
 		opacity: .8 !important;
 		&__title {//h2
 			opacity: 1 !important;
+			&::after {
+				//font-sizeは、object > utility > _size.scss
+				position: absolute;
+				bottom: -18px;
+				// top: 50%;
+				left: 50%;
+				transform: translateX(-50%);
+				// transform: translate(-50%, -50%);
+				content: "お問い合わせ";
+				width: 100%;
+				text-align: center;
+				@include min-screen($break_point_max) {
+					bottom: -22px;
+				}
+			}
 		}
 	}
 }
@@ -194,79 +270,6 @@
 	@include min-screen($break_point_min) {
 		top: 100px;
 	}
-	// &-top {
-		// position: relative;
-		// &__home {
-		// 	opacity: 0;
-		// 	position: absolute;
-		// 	top: 0;
-		// 	left: 0;
-		// 	width: 100%;
-		// 	height: 100%;
-		// 	background-size: cover;
-		// 	background-position: center;
-		// }
-		// &__activity {
-		// 	opacity: 0;
-		// 	position: absolute;
-		// 	top: 0;
-		// 	left: 0;
-		// 	width: 100%;
-		// 	height: 100%;
-		// 	background-size: cover;
-		// 	background-position: center;
-		// }
-		// &__outline {
-		// 	opacity: 0;
-		// 	position: absolute;
-		// 	top: 0;
-		// 	left: 0;
-		// 	width: 100%;
-		// 	height: 100%;
-		// 	background-size: cover;
-		// 	background-position: center;
-		// }
-		// &__news {
-		// 	opacity: 0;
-		// 	position: absolute;
-		// 	top: 0;
-		// 	left: 0;
-		// 	width: 100%;
-		// 	height: 100%;
-		// 	background-size: cover;
-		// 	background-position: center;
-		// }
-		// &__column {
-		// 	opacity: 0;
-		// 	position: absolute;
-		// 	top: 0;
-		// 	left: 0;
-		// 	width: 100%;
-		// 	height: 100%;
-		// 	background-size: cover;
-		// 	background-position: center;
-		// }
-		// &__membership {
-		// 	opacity: 0;
-		// 	position: absolute;
-		// 	top: 0;
-		// 	left: 0;
-		// 	width: 100%;
-		// 	height: 100%;
-		// 	background-size: cover;
-		// 	background-position: center;
-		// }
-		// &__contact {
-		// 	opacity: 0;
-		// 	position: absolute;
-		// 	top: 0;
-		// 	left: 0;
-		// 	width: 100%;
-		// 	height: 100%;
-		// 	background-size: cover;
-		// 	background-position: center;
-		// }
-	// }
 }
 
 

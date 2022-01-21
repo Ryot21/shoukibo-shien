@@ -66,3 +66,10 @@
     font-size: 12px;
   }
 }
+
+.p-activity-block_title {
+  font-size: 23px;
+  @include min-screen($break_point_max) {
+    font-size: 35px;
+  }
+}

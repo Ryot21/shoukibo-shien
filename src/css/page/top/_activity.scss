@@ -1,7 +1,9 @@
 /* ====================
 
 
- トップページ > ごあいさつ
+ トップページ > 活動内容
+
+ 活動内容ページ
 
 
 =======================*/
@@ -78,4 +80,52 @@
 		//font-sizeは、object > utility > _size.scss
 		line-height: 1.5;
 	}
+}
+
+.activity {
+	.l-container__wrapper {
+		padding-bottom: 40px;
+		@include min-screen($break_point_max) {
+			padding-bottom: 20px;
+		}
+	}
+	.p-activity-block {
+		&_title {
+			color: $blue;
+			text-align: center;
+			padding-bottom: 10px;
+			@include min-screen($break_point_max) {
+				padding-bottom: 20px;
+			}
+		}
+		&_img {
+			width: 100%;
+			height: 180px;
+			background-size: cover;
+			background-position: center;
+			overflow: hidden;
+			margin-bottom: 10px;
+			filter: drop-shadow(1px 1px 3px $gray);
+			@include min-screen($break_point_max) {
+				height: 346px;
+				margin-bottom: 10px;
+			}
+		}
+		&_text {//p
+
+		}
+	}
+}
+
+.activity-1 {
+	// background-image: url(../images/mainvisual/page-outline-header.jpeg);
+	background: $blue;
+}
+.activity-2 {
+	// background-image: url(../images/mainvisual/page-outline-header.jpeg);
+	background: $yellow;
+}
+.activity-3 {
+	// background-image: url(../images/mainvisual/page-outline-header.jpeg);
+	background: $gray;
 }

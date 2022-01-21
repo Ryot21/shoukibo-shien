@@ -1263,50 +1263,13 @@ heading
   background: #ffffff;
 }
 
-.activity .c-mv-top__activity__title::after,
-.activity .c-mv-top__outline__title::after,
-.activity .c-mv-top__news__title::after,
-.activity .c-mv-top__column__title::after,
-.activity .c-mv-top__membership__title::after,
-.activity .c-mv-top__contact__title::after,
-.outline .c-mv-top__activity__title::after,
-.outline .c-mv-top__outline__title::after,
-.outline .c-mv-top__news__title::after,
-.outline .c-mv-top__column__title::after,
-.outline .c-mv-top__membership__title::after,
-.outline .c-mv-top__contact__title::after,
-.news .c-mv-top__activity__title::after,
-.news .c-mv-top__outline__title::after,
-.news .c-mv-top__news__title::after,
-.news .c-mv-top__column__title::after,
-.news .c-mv-top__membership__title::after,
-.news .c-mv-top__contact__title::after,
-.column .c-mv-top__activity__title::after,
-.column .c-mv-top__outline__title::after,
-.column .c-mv-top__news__title::after,
-.column .c-mv-top__column__title::after,
-.column .c-mv-top__membership__title::after,
-.column .c-mv-top__contact__title::after,
-.membership .c-mv-top__activity__title::after,
-.membership .c-mv-top__outline__title::after,
-.membership .c-mv-top__news__title::after,
-.membership .c-mv-top__column__title::after,
-.membership .c-mv-top__membership__title::after,
-.membership .c-mv-top__contact__title::after,
-.contact .c-mv-top__activity__title::after,
-.contact .c-mv-top__outline__title::after,
-.contact .c-mv-top__news__title::after,
-.contact .c-mv-top__column__title::after,
-.contact .c-mv-top__membership__title::after,
-.contact .c-mv-top__contact__title::after {
-  position: absolute;
-  bottom: -18px;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-  transform: translateX(-50%);
-  content: "お知らせ";
-  width: 100%;
-  text-align: center;
+.activity .c-mv-top__activity,
+.outline .c-mv-top__activity,
+.news .c-mv-top__activity,
+.column .c-mv-top__activity,
+.membership .c-mv-top__activity,
+.contact .c-mv-top__activity {
+  background-image: url(../images/mainvisual/page-outline-header.jpeg);
 }
 
 .activity .c-mv-top__outline,
@@ -1337,11 +1300,22 @@ heading
 }
 
 .activity .c-mv-top__activity {
-  opacity: .8 !important;
+  opacity: .7 !important;
 }
 
 .activity .c-mv-top__activity__title {
   opacity: 1 !important;
+}
+
+.activity .c-mv-top__activity__title::after {
+  position: absolute;
+  bottom: -18px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  content: "活動内容";
+  width: 100%;
+  text-align: center;
 }
 
 .outline .c-mv-top__outline {
@@ -1352,12 +1326,34 @@ heading
   opacity: 1 !important;
 }
 
+.outline .c-mv-top__outline__title::after {
+  position: absolute;
+  bottom: -18px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  content: "協会概要";
+  width: 100%;
+  text-align: center;
+}
+
 .news .c-mv-top__news {
   opacity: .8 !important;
 }
 
 .news .c-mv-top__news__title {
   opacity: 1 !important;
+}
+
+.news .c-mv-top__news__title::after {
+  position: absolute;
+  bottom: -18px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  content: "お知らせ";
+  width: 100%;
+  text-align: center;
 }
 
 .column .c-mv-top__column {
@@ -1368,6 +1364,17 @@ heading
   opacity: 1 !important;
 }
 
+.column .c-mv-top__column__title::after {
+  position: absolute;
+  bottom: -18px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  content: "コラム";
+  width: 100%;
+  text-align: center;
+}
+
 .membership .c-mv-top__membership {
   opacity: .8 !important;
 }
@@ -1376,12 +1383,34 @@ heading
   opacity: 1 !important;
 }
 
+.membership .c-mv-top__membership__title::after {
+  position: absolute;
+  bottom: -18px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  content: "会員登録";
+  width: 100%;
+  text-align: center;
+}
+
 .contact .c-mv-top__contact {
   opacity: .8 !important;
 }
 
 .contact .c-mv-top__contact__title {
   opacity: 1 !important;
+}
+
+.contact .c-mv-top__contact__title::after {
+  position: absolute;
+  bottom: -18px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  content: "お問い合わせ";
+  width: 100%;
+  text-align: center;
 }
 
 .c-mv {
@@ -1682,7 +1711,9 @@ article
 /* ====================
 
 
- トップページ > ごあいさつ
+ トップページ > 活動内容
+
+ 活動内容ページ
 
 
 =======================*/
@@ -1734,6 +1765,39 @@ article
 
 .activity-item__text {
   line-height: 1.5;
+}
+
+.activity .l-container__wrapper {
+  padding-bottom: 40px;
+}
+
+.activity .p-activity-block_title {
+  color: #5383BC;
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+.activity .p-activity-block_img {
+  width: 100%;
+  height: 180px;
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+  margin-bottom: 10px;
+  -webkit-filter: drop-shadow(1px 1px 3px #BCBBB6);
+  filter: drop-shadow(1px 1px 3px #BCBBB6);
+}
+
+.activity-1 {
+  background: #5383BC;
+}
+
+.activity-2 {
+  background: #FAF45D;
+}
+
+.activity-3 {
+  background: #BCBBB6;
 }
 
 /* ====================
@@ -2345,6 +2409,10 @@ article
   font-size: 10px;
 }
 
+.p-activity-block_title {
+  font-size: 23px;
+}
+
 .u-mt-0 {
   margin-top: 0px !important;
 }
@@ -2870,41 +2938,26 @@ article
     bottom: 10px;
   }
 
-  .activity .c-mv-top__activity__title::after,
-  .activity .c-mv-top__outline__title::after,
-  .activity .c-mv-top__news__title::after,
-  .activity .c-mv-top__column__title::after,
-  .activity .c-mv-top__membership__title::after,
-  .activity .c-mv-top__contact__title::after,
-  .outline .c-mv-top__activity__title::after,
-  .outline .c-mv-top__outline__title::after,
-  .outline .c-mv-top__news__title::after,
-  .outline .c-mv-top__column__title::after,
-  .outline .c-mv-top__membership__title::after,
-  .outline .c-mv-top__contact__title::after,
-  .news .c-mv-top__activity__title::after,
-  .news .c-mv-top__outline__title::after,
-  .news .c-mv-top__news__title::after,
-  .news .c-mv-top__column__title::after,
-  .news .c-mv-top__membership__title::after,
-  .news .c-mv-top__contact__title::after,
-  .column .c-mv-top__activity__title::after,
-  .column .c-mv-top__outline__title::after,
-  .column .c-mv-top__news__title::after,
-  .column .c-mv-top__column__title::after,
-  .column .c-mv-top__membership__title::after,
-  .column .c-mv-top__contact__title::after,
-  .membership .c-mv-top__activity__title::after,
-  .membership .c-mv-top__outline__title::after,
-  .membership .c-mv-top__news__title::after,
-  .membership .c-mv-top__column__title::after,
-  .membership .c-mv-top__membership__title::after,
-  .membership .c-mv-top__contact__title::after,
-  .contact .c-mv-top__activity__title::after,
-  .contact .c-mv-top__outline__title::after,
-  .contact .c-mv-top__news__title::after,
-  .contact .c-mv-top__column__title::after,
-  .contact .c-mv-top__membership__title::after,
+  .activity .c-mv-top__activity__title::after {
+    bottom: -22px;
+  }
+
+  .outline .c-mv-top__outline__title::after {
+    bottom: -22px;
+  }
+
+  .news .c-mv-top__news__title::after {
+    bottom: -22px;
+  }
+
+  .column .c-mv-top__column__title::after {
+    bottom: -22px;
+  }
+
+  .membership .c-mv-top__membership__title::after {
+    bottom: -22px;
+  }
+
   .contact .c-mv-top__contact__title::after {
     bottom: -22px;
   }
@@ -2970,6 +3023,19 @@ article
   .activity-block_list {
     width: calc(33.3333% - 20px);
     margin: 0 10px;
+  }
+
+  .activity .l-container__wrapper {
+    padding-bottom: 20px;
+  }
+
+  .activity .p-activity-block_title {
+    padding-bottom: 20px;
+  }
+
+  .activity .p-activity-block_img {
+    height: 346px;
+    margin-bottom: 10px;
   }
 
   .column-block {
@@ -3168,6 +3234,10 @@ article
   .c-breadcrumb,
   .f-copy {
     font-size: 12px;
+  }
+
+  .p-activity-block_title {
+    font-size: 35px;
   }
 }
 
