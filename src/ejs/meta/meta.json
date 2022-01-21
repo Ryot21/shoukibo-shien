@@ -9,58 +9,66 @@
 
   "home": {
     "bodyclass": "index",
-    "title": "株式会社webitch | 埼玉県狭山市に拠点を置くweb制作会社",
+    "title": "一般社団法人 小規模事業者支援協会 | 小規模事業の方々を支援致します。",
     "description": "web制作、メディア運営、webマーケティング、イベント企画を行っている会社です。",
     "canonical": "/",
-    "keywords": "株式会社webitch, 狭山市, web制作, メディア"
+    "keywords": "一般社団法人, 小規模事業者支援協会, 小規模事業者, 支援"
   },
 
-  "about": {
-    "bodyclass": "about",
-    "title": "株式会社webitch | about",
+  "activity": {
+    "bodyclass": "activity",
+    "title": "一般社団法人 小規模事業者支援協会 | 活動内容",
     "description": "web制作、メディア運営、webマーケティング、イベント企画を行っている会社です。",
-    "canonical": "/about/",
-    "keywords": "株式会社webitch, 狭山市, web制作, メディア, about"
+    "canonical": "/activity/",
+    "keywords": "一般社団法人, 小規模事業者支援協会, 小規模事業者, 支援, 活動内容"
   },
 
-  "service": {
-    "bodyclass": "service",
-    "title": "株式会社webitch | サービス",
+  "outline": {
+    "bodyclass": "outline",
+    "title": "一般社団法人 小規模事業者支援協会 | 協会概要",
     "description": "web制作、メディア運営、webマーケティング、イベント企画を行っている会社です。",
-    "canonical": "/service/",
-    "keywords": "株式会社webitch, 狭山市, web制作, メディア, service"
+    "canonical": "/outline/",
+    "keywords": "一般社団法人, 小規模事業者支援協会, 小規模事業者, 支援, 協会概要"
   },
 
-  "work": {
-    "bodyclass": "work",
-    "title": "株式会社webitch | 制作実績",
+  "news": {
+    "bodyclass": "news",
+    "title": "一般社団法人 小規模事業者支援協会 | お知らせ",
     "description": "web制作、メディア運営、webマーケティング、イベント企画を行っている会社です。",
-    "canonical": "/work/",
-    "keywords": "株式会社webitch, 狭山市, web制作, メディア, 制作実績"
+    "canonical": "/news/",
+    "keywords": "一般社団法人, 小規模事業者支援協会, 小規模事業者, 支援, お知らせ"
   },
 
-  "blog": {
-    "bodyclass": "blog",
-    "title": "株式会社webitch | ブログ",
+  "column": {
+    "bodyclass": "column",
+    "title": "一般社団法人 小規模事業者支援協会 | コラム",
     "description": "web制作、メディア運営、webマーケティング、イベント企画を行っている会社です。",
-    "canonical": "/blog/",
-    "keywords": "株式会社webitch, 狭山市, web制作, メディア, ブログ"
+    "canonical": "/column/",
+    "keywords": "一般社団法人, 小規模事業者支援協会, 小規模事業者, 支援, コラム"
+  },
+
+  "membership": {
+    "bodyclass": "membership",
+    "title": "一般社団法人 小規模事業者支援協会 | 会員登録",
+    "description": "web制作、メディア運営、webマーケティング、イベント企画を行っている会社です。",
+    "canonical": "/membership/",
+    "keywords": "一般社団法人, 小規模事業者支援協会, 小規模事業者, 支援, お問い合わせ"
   },
 
   "contact": {
     "bodyclass": "contact",
-    "title": "株式会社webitch | お問い合わせ",
+    "title": "一般社団法人 小規模事業者支援協会 | お問い合わせ",
     "description": "web制作、メディア運営、webマーケティング、イベント企画を行っている会社です。",
     "canonical": "/contact/",
-    "keywords": "株式会社webitch, 狭山市, web制作, メディア, お問い合わせ"
+    "keywords": "一般社団法人, 小規模事業者支援協会, 小規模事業者, 支援, お問い合わせ"
   },
 
   "thanks": {
     "bodyclass": "thanks",
-    "title": "株式会社webitch | お問い合わせありがとうございます。",
+    "title": "一般社団法人 小規模事業者支援協会 | お問い合わせ",
     "description": "web制作、メディア運営、webマーケティング、イベント企画を行っている会社です。",
     "canonical": "/contact/thanks/",
-    "keywords": "株式会社webitch, 狭山市, web制作, メディア, お問い合わせ"
+    "keywords": "一般社団法人, 小規模事業者支援協会, 小規模事業者, 支援, お問い合わせ"
   }
 
 }

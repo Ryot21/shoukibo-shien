@@ -3,24 +3,31 @@
 
 <ul class="c-breadcrumb">
   <li class="c-breadcrumb__item"><a  class="c-breadcrumb__link" href="/">ホーム</a></li>
-  <li class="c-breadcrumb__item>カレントページタイトル</li>
+  <li class="c-breadcrumb__item">カレントページタイトル</li>
 </ul>
 
 =======================*/
-
 .c-breadcrumb {
-    
+    background: $lightwhite;
+    &__inner {
+      padding: 0 $content_padding_sp;
+      margin: auto;
+      @include min-screen($break_point_pc) {
+        max-width: 1200px;
+      }
+    }
     &__item {
       display: inline-block;
       &:not(:last-child) {
         &::after {
           content: ">";
-          padding: 0 5px;
+          padding: 0 15px;
         }
       }
     }
 
     &__link {
+      color: $blue !important;
       text-decoration: none;
     }
-  }
+}

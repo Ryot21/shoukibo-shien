@@ -19,6 +19,12 @@ l-container
 			max-width: 1200px;
 		}
   }
+  &__wrapper {
+    padding-top: 40px;
+		@include min-screen($break_point_pc) {
+      padding-top: 50px;
+		}
+  }
 }
 
 .l-container_sec {

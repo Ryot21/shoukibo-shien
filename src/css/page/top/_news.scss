@@ -7,6 +7,19 @@
 =======================*/
 .news-block {
 	&_title {
+		&::before {
+			position: absolute;
+			bottom: 5px;
+			left: 50%;
+			transform: translateX(-50%);
+			content: "";
+			width: 50px;
+			height: 2px;
+			background: $blue;
+			@include min-screen($break_point_max) {
+				bottom: 10px;
+			}
+		}
 		&::after {
 			//font-sizeは、object > utility > _size.scss
 			position: absolute;
@@ -23,6 +36,7 @@
 
 .news {
 	&-lists {//ul
+		color: $lightblack;
 		margin-bottom: 45px;
 		@include min-screen($break_point_pc) {
 			max-width: 1200px;
@@ -57,7 +71,8 @@
 			display: inline-block;
 			margin-right: 20px;
 			// color: #FF9300;
+			font-weight: bold;
 		}
 	}
-
 }
+

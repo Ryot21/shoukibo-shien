@@ -14,7 +14,13 @@
 // TOPページ > 
 .section-block_title,
 .worries-block_title,
-.activity-block_title {
+.activity-block_title,
+.c-mv-top__activity__title,
+.c-mv-top__outline__title,
+.c-mv-top__news__title,
+.c-mv-top__column__title,
+.c-mv-top__membership__title,
+.c-mv-top__contact__title {
     font-size: 23px;
     @include min-screen($break_point_min) {
       font-size: 40px;
@@ -25,7 +31,13 @@
 .intro-block_title,
 .activity-block_title,
 .partner-block_title,
-.column-block_title {
+.column-block_title,
+.c-mv-top__activity__title,
+.c-mv-top__outline__title,
+.c-mv-top__news__title,
+.c-mv-top__column__title,
+.c-mv-top__membership__title,
+.c-mv-top__contact__title {
   &::after {
     font-size :10px;
 		@include min-screen($break_point_max) {
@@ -47,6 +59,7 @@
   }
 }
 
+.c-breadcrumb,
 .f-copy {
   font-size: 10px;
   @include min-screen($break_point_max) {
