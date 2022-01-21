@@ -33,6 +33,14 @@
       margin-bottom: 10px;
     }
   }
+  &_link {//a
+    &:hover {
+      .p-card_data {
+        background: $yellow;
+        transition: .5s;
+      } 
+    }
+  }
   &_thumbnail {
     width: 100%;
   }
@@ -43,6 +51,8 @@
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
+    transition: .5s;
+
     &__day {
       font-weight: bold;
     }

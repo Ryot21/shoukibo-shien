@@ -461,7 +461,7 @@ l-container
 .l-container {
   margin: 0 auto;
   padding: 60px 0 0;
-  background: #ffffff;
+  background: #FAFAFA;
 }
 
 .l-container:after {
@@ -481,8 +481,8 @@ l-container
 
 .l-container_sec {
   margin: 0 auto;
-  padding: 60px 0 0;
-  background: #CCE3ED;
+  padding: 40px 0 0;
+  background-image: url(../images/bg/cross_scratches_@2X.png);
 }
 
 .l-container_sec:after {
@@ -810,7 +810,7 @@ l-sec-content
 =======================*/
 
 .c-breadcrumb {
-  background: #FAFAFA;
+  background: #f0efee;
 }
 
 .c-breadcrumb__inner {
@@ -1534,7 +1534,7 @@ heading
 }
 
 .c-table.c-table__default .c-table__row > dt {
-  background: #e3e2e0;
+  background: #f0efee;
 }
 
 /* ====================
@@ -1568,6 +1568,11 @@ article
   filter: drop-shadow(1px 1px 2px #BCBBB6);
 }
 
+.p-card_link:hover .p-card_data {
+  background: #FAF45D;
+  transition: .5s;
+}
+
 .p-card_thumbnail {
   width: 100%;
 }
@@ -1579,6 +1584,7 @@ article
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
+  transition: .5s;
 }
 
 .p-card_data__day {
@@ -2000,13 +2006,13 @@ article
 .news-list {
   padding: 5px 10px;
   margin-bottom: 5px;
-  background: #ffffff;
+  background: #FAFAFA;
   border-bottom: 1px solid #BCBBB6;
   transition: 0.5s;
 }
 
 .news-list:hover {
-  background: #e3e2e0;
+  background: #f0efee;
   transition: 0.5s;
 }
 
@@ -2775,7 +2781,7 @@ article
   }
 
   .l-container_sec {
-    padding: 100px 0 0;
+    padding: 50px 0 0;
   }
 
   .l-container_thr {
