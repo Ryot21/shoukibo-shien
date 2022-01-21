@@ -1065,7 +1065,7 @@ header
 }
 
 .c-header__logo {
-  width: 120px;
+  width: 130px;
 }
 
 /* ====================
@@ -2902,7 +2902,7 @@ article
   }
 
   .c-header__logo {
-    width: 170px;
+    width: 200px;
   }
 
   .activity .c-mv-top__activity__title::before,

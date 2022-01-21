@@ -134,9 +134,9 @@ header
     }
   }
   &__logo {
-    width: 120px;
+    width: 130px;
     @include min-screen($break_point_max) {
-      width: 170px;
+      width: 200px;
     }
   }
 
