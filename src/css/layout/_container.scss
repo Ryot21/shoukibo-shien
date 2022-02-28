@@ -4,13 +4,13 @@ l-container
 
 .l-container {
   margin: 0 auto;
-  padding: 60px 0 0;
+  margin: 60px 0 0;
   background: $lightwhite;
-
+  transition: .5s;
   // padding: 0 $content_padding_sp;
   @include clearfix;
   @include min-screen($break_point_max) {
-    padding: 100px 0 0;
+    margin: 100px 0 0;
   }
   &__inner {
     // background: rgb(125, 182, 50);

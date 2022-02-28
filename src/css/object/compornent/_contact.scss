@@ -1,0 +1,226 @@
+/* ====================
+ お問い合わせページ用
+
+
+=======================*/
+.wpcf7-spinner {
+	display: block !important;
+	margin: auto !important;
+}
+// お問い合わせエリア
+.contact {
+	#p-contact {
+		.page-header {
+			img {
+				top: 39%;
+			}
+		}
+	}
+	&-box {//サイズ指定
+		@include max-screen($break_point_max) {
+			padding: 25px;
+			margin: -20px auto 30px;
+		}
+		// @include min-screen($break_point_max) {
+		// 	width: 580px;
+		// 	padding: 20px;
+		// 	margin: 0 auto 82px;
+		// 	// margin-bottom: 82px;
+		// }
+		// @include min-screen($break_point_pc) {
+		// 	width: 950px;
+		// 	padding: 40px;
+		// 	margin-bottom: 50px;
+		// }
+	}
+	&-text {//先頭の注意書
+		text-align: center;
+		line-height: 1.5;
+		margin: 25px 0;
+		@include min-screen($break_point_min) {
+			margin: 50px 0;
+		}
+	}
+}
+
+.c-form {
+	@include min-screen($break_point_max) {
+		display: table;
+		width: 790px;
+		margin-left: 65px !important;
+	}
+	@include min-screen($break_point_min) {
+		width: 950px;
+		margin-left: 140px !important;
+	}
+	@include min-screen($break_point_pc) {
+		margin: 0 auto !important;
+	}
+	&-table__row {
+		@include min-screen($break_point_max) {
+			display: table-row;
+			width: 100%;
+		}
+		dt {
+			position: relative;
+			background-color: $lightgray;
+			border-left: 2px dashed #2A6FB3;			padding: 10px 15px;
+			font-weight: bold;
+			@include min-screen($break_point_max) {
+				display: table-cell;
+				width: 25%;
+				padding: 20px 15px;
+				background-color: transparent;
+				border: none;
+				vertical-align: top;
+			}
+			@include min-screen($break_point_pc) {
+				width: 30%;
+			}
+		}
+		dd {
+			padding: 18px 5px;
+			margin-inline-start: 0;
+			@include min-screen($break_point_max) {
+				display: table-cell;
+				padding: 21px 15px 15px;
+			}
+		}
+		.c-form-table__last {
+			padding: 18px 5px 0;
+			@include min-screen($break_point_max) {
+				padding: 21px 15px 15px;
+			}
+		}
+	}
+	.wpcf7-text,
+	.wpcf7-textarea {
+		@include max-screen($break_point_max) {
+			width: -webkit-fill-available;
+		}
+	}
+	.wpcf7-checkbox {
+		display: block;
+		@include min-screen($break_point_max) {
+			width: 55%;
+		}
+		@include min-screen($break_point_pc) {
+			width: 75%;
+		}
+	}
+}
+.red-box_ttl {
+	font-size: 12px;
+    font-weight: bold;
+    color: $white;
+    background-color: red;
+    padding: 1px 5px 3px;
+    margin-right: 5px;
+    border-radius: 5px;
+    line-height: 2;
+}
+.red-box {
+	position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 12px;
+    font-weight: bold;
+    color: $white;
+    background-color: red;
+    padding: 0px 8px 1px;
+    border-radius: 5px;
+    line-height: 2;
+	@include min-screen($break_point_max) {
+		top: 21px;
+    	right: 15px;
+	}
+	@include min-screen($break_point_pc) {
+		top: 25px;
+		right: 35px;
+	}
+}
+
+.input__nomal {
+	@include min-screen($break_point_max) {
+    	width: 55% !important;
+	}
+	@include min-screen($break_point_pc) {
+    	width: 90% !important;
+	}
+}
+.input__middle {
+	@include min-screen($break_point_max) {
+    	width: 30% !important;
+	}
+	@include min-screen($break_point_pc) {
+    	width: 50% !important;
+	}
+}
+.input__small {
+	@include min-screen($break_point_max) {
+    	width: 30% !important;
+	}
+	@include min-screen($break_point_pc) {
+    	width: 40% !important;
+	}
+}
+
+.wpcf7-list-item {
+	display: inline-block;
+    margin: 0 0 0 .5em;
+	@include max-screen($break_point_max) {
+		display: block !important;
+	}
+}
+.wpcf7-list-item-label {
+	padding-left: .5em;
+}
+
+.wpcf7 .ajax-loader {
+	display: block !important;
+	left: 50%;
+    transform: translateX(-50%);
+	margin: 10px 0 0 !important;
+	@include max-screen($break_point_max) {
+		// margin: 10px 145px 0 0;
+	}
+}
+
+
+.c-contact_btn {
+	transition: ease .4s;
+	&:hover {
+		color: $white;
+		background-color: $blue;
+		transition: ease .4s;
+		.btn-arrow {
+			border-left: 7px solid $white;
+			background-color: $blue;
+			transition: ease .4s;
+		}
+	}
+}
+
+// お問い合わせボタン
+.c-contact {
+	text-align: center;
+	margin: 55px 0 10px;
+	@include min-screen($break_point_max) {
+		margin: 30px 0 15px;
+	}
+}
+.c-contact_btn {
+	// position: absolute;
+	// bottom: 85px;
+    // left: 50%;
+    // transform: translateX(-50%);
+	display       : inline-block;
+	border-radius : 6px;          /* 角丸       */
+	font-size     : 16px;        /* 文字サイズ */
+	text-align    : center;      /* 文字位置   */
+	cursor        : pointer;     /* カーソル   */
+	padding		  : 0.5rem 5rem 0.5rem 5rem;  /* 余白       */
+	color         : $black;     /* 文字色     */
+	border		  : 1px solid $black;   /* 枠の指定 */
+
+}

@@ -1,0 +1,40 @@
+
+.wp-pagenavi {
+	margin-bottom: 20px;
+    padding: 45px 10px 0;
+    text-align: center;
+    border-radius: 10px;
+	@include min-screen($break_point_max) {
+		padding: 80px 10px 0;
+	}
+}
+
+
+.p-pagination {
+	a,span {
+		color: #999;
+		background: $white;
+		border: solid 1px #e0e0d2;
+		padding: 8px 15px !important;
+		margin: 0 2px;
+		white-space: nowrap;
+		border-radius: 3px;
+		transition: 0.2s ease-in-out;
+		text-align: center;
+		text-decoration:none;
+	}
+	a {
+		&:hover {
+			color:$white; 
+			background:#999; 
+			border-color:#999;
+		}
+	}
+	
+	&_current {
+		color: $white !important;
+		background: $blue !important;
+		border-color: $blue !important;
+		font-weight: bold !important;
+	}
+}

@@ -16,7 +16,7 @@
 .index {
 	.c-mv-top {
 		// 削除予定
-		
+		background: rgb(222, 238, 240);
 		// /削除予定
 		position: relative;
 		height: 218px;
@@ -30,8 +30,9 @@
 		&__column,
 		&__membership,
 		&__contact {
+			display: none;
 			&__title {//h2
-				opacity: 0;
+				display: none;
 			}
 		}
 	}
@@ -44,14 +45,14 @@
 .contact {
 	.c-mv-top {
 		// 削除予定
-		background: rgb(240, 255, 244);
+		// background: rgb(240, 255, 244);
 		// /削除予定
 		position: relative;
 		height: 218px;
 		@include min-screen($break_point_min) {
 			height: 341px;
 		}
-		&_bg {
+		&_bg {//シャドウフィルター
 			background-color: $black;
 			height: 218px;
 			@include min-screen($break_point_min) {
@@ -110,13 +111,14 @@
 			background-image: url(../images/mainvisual/page-column-header.jpeg);
 		}
 		&__membership {
-			// background-image: url(./images/top/flag_navy.png);
+			background-image: url(../images/mainvisual/page-member-header.jpeg);
 		}
 		&__contact {
-			// background-image: url(./images/top/flag_navy.png);
+			background-image: url(../images/mainvisual/page-contact-header.jpeg);
 		}
 	}
 }
+
 
 .activity {
 	.c-mv-top__activity {

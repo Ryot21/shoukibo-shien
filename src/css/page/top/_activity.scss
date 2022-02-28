@@ -10,6 +10,8 @@
 
 .activity-block {
 	padding: 30px 0 60px;
+	// background-image: url(../images/bg/so-white.png);
+
 	&_title {
 		&::after {
 			//font-sizeは、object > utility > _size.scss
@@ -27,24 +29,25 @@
 		
 		align-items: center;
 		padding: 0 10px;
-		margin-bottom: 45px;
+		
 		@include min-screen($break_point_max) {
 			display: flex;
-			flex-wrap: wrap;
+			// flex-wrap: wrap;
 			justify-content: space-between;
 			padding: 0 50px;
-			margin-bottom: 60px;
+			margin-bottom: 45px;
+			margin-left: -10px;
 		}
 	}
 	&_list {//li
-		background: $white;
-		filter: drop-shadow(1px 1px 2px $gray);
+		// background: $white;
+		// filter: drop-shadow(1px 1px 2px $gray);
 		@include max-screen($break_point_max) {
 			margin-bottom: 50px;
 		}
 		@include min-screen($break_point_max) {
-			width: calc(33.3333% - 20px);
-			margin: 0 10px;
+			// width: calc(33.3333% - 20px) !important;
+			// margin: 0 0 10px 0;
 		}
 		&:last-child {
 			@include max-screen($break_point_max) {
@@ -65,7 +68,7 @@
 		overflow: hidden;
 	}
 	&__bottombox {
-		padding: 0 5px 10px;
+		padding: 0 25px 10px;
 		@include max-screen($break_point_max) {
 			padding: 0 8px 10px;
 		}

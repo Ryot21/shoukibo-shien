@@ -6,12 +6,17 @@
  コラム一覧ページ
 
 =======================*/
-
+.news {
+	.column-block {
+		@include min-screen($break_point_max) {
+			height: 50vw;
+		}
+	}
+}
 .column-block {
 	padding: 40px 0 60px !important;
 	@include min-screen($break_point_max) {
 		padding: 50px 0 90px !important;
-
 	}
 	&_title {
 		&::after {
@@ -75,4 +80,27 @@
 	&-list {//li
 		//p-cardは、project > _card.scss
 	}
+}
+
+.page-column {
+	&-header {//h2
+		border-bottom: 1px solid $black;
+		&__title {
+			font-size: 18px;
+			@include min-screen($break_point_max) {
+				font-size: 22px;
+			}
+		}
+		&__date {
+			color: $gray;
+			text-align: right;
+		}
+	}
+	&__content {
+		padding: 0 5px 50px;
+		@include min-screen($break_point_pc) {
+			padding: 0 80px 50px;
+		}
+	}
+
 }

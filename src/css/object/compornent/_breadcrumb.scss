@@ -26,7 +26,8 @@
       }
     }
 
-    &__link {
+    &__link,
+    a {
       color: $blue !important;
       text-decoration: none;
     }

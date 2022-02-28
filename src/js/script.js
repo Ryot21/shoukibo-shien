@@ -4,6 +4,8 @@ $(function () {
   var $body = $('body');
   var $menu = $('#js-menu');
 
+
+
   AOS.init()//Animation On Scroll libraryを使用する宣言
 
   $(function() {// 宣言
@@ -47,23 +49,23 @@ function navControl() {
       });
 }
 
-  // anchor link
-  function anchorLink() {
-    $(document).on('click', 'a[href^="#"]', function(e) {
-      e.preventDefault();
+// anchor link
+function anchorLink() {
+  $(document).on('click', 'a[href^="#"]', function(e) {
+    e.preventDefault();
 
-      var $el     = $(this);
-      var $target = $($el.attr('href'));
-      paddingTop = $('#header').outerHeight();
+    var $el     = $(this);
+    var $target = $($el.attr('href'));
+    paddingTop = $('#header').outerHeight();
 
-      if (!$target[0]) {
-        return;
-      }
+    if (!$target[0]) {
+      return;
+    }
 
-      var offset = $target.offset().top;
-      $('html, body').animate({scrollTop: offset - paddingTop});
-    });
-  }
+    var offset = $target.offset().top;
+    $('html, body').animate({scrollTop: offset - paddingTop});
+  });
+}
 
 
   //トップ画像
@@ -97,24 +99,24 @@ function navControl() {
 
 
 //スクロール途中からヘッダーを出現させるための設定を関数でまとめる(1/3)
-    function FixedAnime() {
-      var elemTop = $('#area-3').offset().top;//#area-3の位置まできたら
-      var scroll = $(window).scrollTop();
-      if(scroll <= 680){//上から580pxスクロールされたら $('#header').addClass('DownMove');//DownMoveというクラス名を除き } else if (scroll >= elemTop){
-          $('.pc-nav__lists').removeClass('UpMove');//#headerについているUpMoveというクラス名を除く
-          $('.pc-nav__lists').addClass('DownMove');//#headerについているDownMoveというクラス名を付与
+    // function FixedAnime() {
+    //   var elemTop = $('#area-3').offset().top;//#area-3の位置まできたら
+    //   var scroll = $(window).scrollTop();
+    //   if(scroll <= 680){//上から580pxスクロールされたら $('#header').addClass('DownMove');//DownMoveというクラス名を除き } else if (scroll >= elemTop){
+    //       $('.pc-nav__lists').removeClass('UpMove');//#headerについているUpMoveというクラス名を除く
+    //       $('.pc-nav__lists').addClass('DownMove');//#headerについているDownMoveというクラス名を付与
 
-        }else{
-          if($('.pc-nav__lists').hasClass('DownMove')){//すでに#headerにDownMoveというクラス名がついていたら
-            $('.pc-nav__lists').removeClass('DownMove');//DownMoveというクラス名を除き
-            $('.pc-nav__lists').addClass('UpMove');//UpnMoveというクラス名を付与
-          }
-        }
-    }
+    //     }else{
+    //       if($('.pc-nav__lists').hasClass('DownMove')){//すでに#headerにDownMoveというクラス名がついていたら
+    //         $('.pc-nav__lists').removeClass('DownMove');//DownMoveというクラス名を除き
+    //         $('.pc-nav__lists').addClass('UpMove');//UpnMoveというクラス名を付与
+    //       }
+    //     }
+    // }
     // 画面をスクロールをしたら動かしたい場合の記述
-    $(window).scroll(function () {
-      FixedAnime();/* スクロール途中からヘッダーを出現させる関数を呼ぶ*/
-    });
+    // $(window).scroll(function () {
+    //   FixedAnime();/* スクロール途中からヘッダーを出現させる関数を呼ぶ*/
+    // });
 //スクロール途中からヘッダーを出現させるための設定を関数でまとめる(2/3)
     // function FixedAnimeSP() {
     //   var elemTop = $('#area-3').offset().top;
@@ -260,7 +262,6 @@ $('.c-slider').slick({
         pauseOnHover: false,//マウスホバーで一時停止を無効
         pauseOnDotsHover: false,//ドットナビゲーションをマウスホバーで一時停止を無効
 });
-
 //スマホ用：スライダーをタッチしても止めずにスライドをさせたい場合
 $('.c-slider').on('touchmove', function(event, slick, currentSlide, nextSlide){
     $('.c-slider').slick('slickPlay');
