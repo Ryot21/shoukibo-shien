@@ -1251,8 +1251,6 @@ heading
 
 .index .c-mv-top {
   background: #deeef0;
-  position: relative;
-  height: 218px;
 }
 
 .index .c-mv-top__activity,
@@ -1271,6 +1269,23 @@ heading
 .index .c-mv-top__membership__title,
 .index .c-mv-top__contact__title {
   display: none;
+}
+
+.index .c-mv-top {
+  position: relative;
+  height: 218px;
+}
+
+.index .c-mv-top__home {
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  background-image: url(../images/mainvisual/top-page-header.jpeg);
 }
 
 .activity .c-mv-top,
@@ -1484,6 +1499,10 @@ heading
 .membership .c-mv-top__contact,
 .contact .c-mv-top__contact {
   background-image: url(../images/mainvisual/page-contact-header.jpeg);
+}
+
+.index .c-mv-top__home {
+  opacity: .7 !important;
 }
 
 .activity .c-mv-top__activity {
@@ -3584,7 +3603,7 @@ article
   }
 
   .index .c-mv-top {
-    height: 805px;
+    height: 600px;
   }
 
   .activity .c-mv-top,

@@ -18,11 +18,7 @@
 		// 削除予定
 		background: rgb(222, 238, 240);
 		// /削除予定
-		position: relative;
-		height: 218px;
-		@include min-screen($break_point_min) {
-			height: 805px;
-		}
+
 
 		&__activity,
 		&__outline,
@@ -37,6 +33,27 @@
 		}
 	}
 }
+.index{
+	.c-mv-top {
+		position: relative;
+		height: 218px;
+		@include min-screen($break_point_min) {
+			height: 600px;
+		}
+		&__home{
+			opacity: 0;
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			background-size: cover;
+			background-position: center;
+			background-image: url(../images/mainvisual/top-page-header.jpeg);
+		}
+	}
+}
+
 .activity,
 .outline,
 .news,
@@ -116,6 +133,12 @@
 		&__contact {
 			background-image: url(../images/mainvisual/page-contact-header.jpeg);
 		}
+	}
+}
+
+.index{
+	.c-mv-top__home {
+		opacity: .7 !important;
 	}
 }
 
