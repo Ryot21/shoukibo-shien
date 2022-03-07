@@ -2,18 +2,19 @@
 l-container
 ==========================*/
 
+body{
+  background: $lightwhite;
+}
+
 .l-container {
   margin: 0 auto;
   margin: 60px 0 0;
-  background: $lightwhite;
   transition: .5s;
-  // padding: 0 $content_padding_sp;
   @include clearfix;
   @include min-screen($break_point_max) {
     margin: 100px 0 0;
   }
   &__inner {
-    // background: rgb(125, 182, 50);
     padding: 0 $content_padding_sp;
     margin: auto;
 		@include min-screen($break_point_pc) {
@@ -31,8 +32,6 @@ l-container
 .l-container_sec {
   margin: 0 auto;
   padding: 40px 0 0;
-  // background: #CCE3ED;
-	// background-image: url(../images/bg/blu_stripes_@2X.png);
   background-image: url(../images/bg/cross_scratches_@2X.png);
 
   @include clearfix;
@@ -57,8 +56,6 @@ l-container
     padding: 0px 0 0;
   }
   &__inner {
-    // background: rgb(168, 206, 255);
-    
     padding: 0 $content_padding_sp;
     margin: auto;
     @include min-screen($break_point_pc) {

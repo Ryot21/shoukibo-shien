@@ -13,24 +13,21 @@ global-navigation active
 }
 // 表示アニメーション
 .mobile-menu {
+  width: 100%;
+  height: 300px;
   // ↓メニューを背面に配置した。(固定位置)
-  position: fixed;
-  left: 50%;
-  top: 45%;
-  width: 320px;
-  margin: 0 auto;
-  transform: translate(-50%, -50%);
+  position: relative;
   @include min-screen($break_point_pc) {
     display: none !important;
   }
   &__main {
-      padding: 0;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%,-50%);
       // ↓表示を滑らかにした。
       perspective: 2000px;
       transform-style: preserve-3d;
-  }
-  &__ttl {
-    opacity: 0;
   }
   &__item {
       list-style: none;
@@ -41,10 +38,6 @@ global-navigation active
       opacity: 0;
   }
   &__link {
-      display: block;
-      margin-top: 30px;
-      color: $black;
-      text-decoration: none;
       
   }
 }
@@ -53,12 +46,15 @@ global-navigation active
 .menu-open {
   /* スマホhーmenu時にスクロール禁止 */
   overflow: hidden;
-  & #container,
-  .l-container,
+  & .l-container,
   .l-container_sec,
   .l-container_thr,
   .l-footer {
     opacity: 0;
+    transition: all .1s;
+  }
+  & .c-mv{
+    display: none;
     transition: all .1s;
   }
   & .mobile-menu {
@@ -79,7 +75,7 @@ global-navigation active
           transform: none;
           opacity: 1;
           /* $iが1から始まり、5で終わる */
-          @for $i from 1 through 5 {
+          @for $i from 1 through 7 {
               /* 0.07sずつ遅らせて表示させる。(二つ目以降も適用) */
               &:nth-child(#{$i}) {
                   transition-delay: $i * 0.07s;
@@ -91,57 +87,26 @@ global-navigation active
 
 // ハンバーガーメニュータップopen後に表示されるメニュー　↓
 .mobile-menu__main /* ul */ {
-  display: inline-block;
-  list-style: none;
-  margin-bottom: 5px;
+  // display: inline-block;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 50px 0;
   width: 100%;
   .mobile-menu__item /* li */ {
     position: relative;
-    height: .5em;
+    flex-basis: 50%;
+    text-align: center;
+    padding-bottom: 5px;
     @include min-screen($break_point_min) {
       height: 2.5em;
-    }
-    // ボーダーライン↓
-    &::before {
-      position: absolute;
-      content: '';
-      top: 20px;
-      left: 50%;
-      height: 10px;
-      width: 50%;  
-      background-color: rgba(200, 200, 200, 0.5);
-      transform: translateX(-50%);
-      @include min-screen($break_point_min) {
-        top: 95px;
-        width: 74%;
-      }
     }
     .mobile-menu__link /* a */ {
       position: relative;
       display: block;
+      padding: 15px 0;
+      color: $black;
       cursor: pointer;
-      .en-title {
-        top: 0;
-        left: 0;
-        font-weight: 400;
-        font-size: 16px;
-      }
-      .ja-title {
-        position: absolute;
-        display: inline-block;
-        top: 10px;
-        left: 50%;
-        width: 100%;
-        text-align: center;
-        line-height: 1;
-        font-size: 16px;
-        color: $gray;
-        transform: translateX(-50%);
-        @include min-screen($break_point_min) {
-          top: 84px;
-          font-size: 12px;
-        }
-      }
     }
   }
 }
