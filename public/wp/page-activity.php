@@ -15,35 +15,35 @@ Template Name: ACTIVITY template
 
   <div class="l-container__inner">
     <div class="l-container__wrapper">
-        <!-- ①活動内容 -->
+        <!-- ①有益な情報発信と仕業専門家による情報共有 -->
         <section id="activity-1" class="p-activity-block section-block">
-          <h2 class="p-activity-block_title">①活動内容</h2>
+          <h2 class="p-activity-block_title">会員様に向けた有益な情報発信</h2>
           <div class="p-activity-block_img activity-1">
-            <!-- <img src="../images/mainvisual/page-outline-header.jpeg" class="" alt=""> -->
+            <img src="<?php bloginfo('template_url'); ?>/images/activity/jouhou-kyouyu@2x.png" class="" alt="会員様に向けた有益な情報発信">
           </div>
-          <p class="p-activity-block_text">
+          <!-- <p class="p-activity-block_text">
             テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
-          </p>
+          </p> -->
         </section>
-        <!-- ②活動内容 -->
+        <!-- コストや財務問題の解決 -->
         <section id="activity-2" class="p-activity-block section-block">
-          <h2 class="p-activity-block_title">②活動内容</h2>
+          <h2 class="p-activity-block_title">コストや財務問題の解決</h2>
           <div class="p-activity-block_img activity-2">
-            <!-- <img src="../images/mainvisual/page-outline-header.jpeg" class="" alt=""> -->
+            <img src="<?php bloginfo('template_url'); ?>/images/activity/cosutomondai@2x.png" class="" alt="コストや財務問題の解決">
           </div>
-          <p class="p-activity-block_text">
+          <!-- <p class="p-activity-block_text">
             テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
-          </p>
+          </p> -->
         </section>
-        <!-- ③活動内容 -->
+        <!-- 提携先の紹介と法人化サポート -->
         <section id="activity-3" class="p-activity-block section-block">
-          <h2 class="p-activity-block_title">③活動内容</h2>
+          <h2 class="p-activity-block_title">提携先の紹介と法人化サポート</h2>
           <div class="p-activity-block_img activity-3">
-            <!-- <img src="../images/mainvisual/page-outline-header.jpeg" class="" alt=""> -->
+            <img src="<?php bloginfo('template_url'); ?>/images/activity/support@2x.png" class="" alt="提携先の紹介と法人化サポート">
           </div>
-          <p class="p-activity-block_text">
+          <!-- <p class="p-activity-block_text">
             テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
-          </p>
+          </p> -->
         </section>
     </div>
   </div>

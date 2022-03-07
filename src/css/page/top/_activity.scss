@@ -103,14 +103,15 @@
 		}
 		&_img {
 			width: 100%;
-			height: 180px;
+			// height: 180px;
+			height: 100%;
 			background-size: cover;
 			background-position: center;
 			overflow: hidden;
 			margin-bottom: 10px;
 			filter: drop-shadow(1px 1px 3px $gray);
 			@include min-screen($break_point_max) {
-				height: 346px;
+				// height: 346px;
 				margin-bottom: 10px;
 			}
 		}
