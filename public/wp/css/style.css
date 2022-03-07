@@ -1995,11 +1995,15 @@ article
 .activity .p-activity-block_title {
   color: #5383BC;
   text-align: center;
-  padding-bottom: 10px;
+  padding-bottom: 30px;
+}
+
+.activity .p-activity-block-wrap {
+  overflow: auto;
 }
 
 .activity .p-activity-block_img {
-  width: 100%;
+  width: 1000px;
   height: 100%;
   background-size: cover;
   background-position: center;
@@ -3324,6 +3328,7 @@ article
   }
 
   .activity .p-activity-block_img {
+    width: 100%;
     margin-bottom: 10px;
   }
 

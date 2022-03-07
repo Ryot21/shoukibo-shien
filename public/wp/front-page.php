@@ -56,7 +56,7 @@ get_header();
 		<!-- カードセクション > 悩みブロック -->
 		<div class="section-block">
 			<section class="worries-block section-block__card">
-				<h2 class="worries-block_title">こんなお悩みはありませんか？</h2>
+				<h2 class="worries-block_title">こんなお悩みありませんか？</h2>
 				<div class="worries-block_flex">
 					<!-- 左 -->
 					<div class="worries-block_flex__left">
