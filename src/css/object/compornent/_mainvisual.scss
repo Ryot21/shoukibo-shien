@@ -13,26 +13,7 @@
 
 
 =======================*/
-.index {
-	.c-mv-top {
-		// 削除予定
-		background: rgb(222, 238, 240);
-		// /削除予定
 
-
-		&__activity,
-		&__outline,
-		&__news,
-		&__column,
-		&__membership,
-		&__contact {
-			display: none;
-			&__title {//h2
-				display: none;
-			}
-		}
-	}
-}
 .index{
 	.c-mv-top {
 		position: relative;
@@ -51,6 +32,17 @@
 			background-position: center;
 			background-image: url(../images/mainvisual/top-page-header.jpeg);
 		}
+		&__activity,
+		&__outline,
+		&__news,
+		&__column,
+		&__membership,
+		&__contact {
+			display: none;
+			&__title {//h2
+				display: none;
+			}
+		}
 	}
 }
 
@@ -61,9 +53,6 @@
 .membership,
 .contact {
 	.c-mv-top {
-		// 削除予定
-		// background: rgb(240, 255, 244);
-		// /削除予定
 		position: relative;
 		height: 218px;
 		@include min-screen($break_point_min) {
@@ -97,7 +86,6 @@
 				left: 50%;
 				transform: translate(-50%, -50%);
 				opacity: 0;
-
 				text-shadow: 2px 2px 4px $blue;
 				&::before {
 					position: absolute;
@@ -112,7 +100,6 @@
 						bottom: 10px;
 					}
 				}
-
 			}
 		}
 		&__activity {
@@ -152,10 +139,8 @@
 				//font-sizeは、object > utility > _size.scss
 				position: absolute;
 				bottom: -18px;
-				// top: 50%;
 				left: 50%;
 				transform: translateX(-50%);
-				// transform: translate(-50%, -50%);
 				content: "活動内容";
 				width: 100%;
 				text-align: center;
@@ -176,10 +161,8 @@
 				//font-sizeは、object > utility > _size.scss
 				position: absolute;
 				bottom: -18px;
-				// top: 50%;
 				left: 50%;
 				transform: translateX(-50%);
-				// transform: translate(-50%, -50%);
 				content: "協会概要";
 				width: 100%;
 				text-align: center;
@@ -200,10 +183,8 @@
 				//font-sizeは、object > utility > _size.scss
 				position: absolute;
 				bottom: -18px;
-				// top: 50%;
 				left: 50%;
 				transform: translateX(-50%);
-				// transform: translate(-50%, -50%);
 				content: "お知らせ";
 				width: 100%;
 				text-align: center;
@@ -224,10 +205,8 @@
 				//font-sizeは、object > utility > _size.scss
 				position: absolute;
 				bottom: -18px;
-				// top: 50%;
 				left: 50%;
 				transform: translateX(-50%);
-				// transform: translate(-50%, -50%);
 				content: "コラム";
 				width: 100%;
 				text-align: center;
@@ -248,10 +227,8 @@
 				//font-sizeは、object > utility > _size.scss
 				position: absolute;
 				bottom: -18px;
-				// top: 50%;
 				left: 50%;
 				transform: translateX(-50%);
-				// transform: translate(-50%, -50%);
 				content: "会員登録";
 				width: 100%;
 				text-align: center;
@@ -272,10 +249,8 @@
 				//font-sizeは、object > utility > _size.scss
 				position: absolute;
 				bottom: -18px;
-				// top: 50%;
 				left: 50%;
 				transform: translateX(-50%);
-				// transform: translate(-50%, -50%);
 				content: "お問い合わせ";
 				width: 100%;
 				text-align: center;

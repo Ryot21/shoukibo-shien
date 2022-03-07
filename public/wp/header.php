@@ -151,42 +151,27 @@
 					</div>
 					<!-- ハンバーガーメニュー / モバイルメニュー -->
 					<div id="js-menu" class="mobile-menu">
-						<!-- <h2 class="mobile-menu__ttl">menu</h2> -->
 						<ul class="mobile-menu__main">
 							<li class="mobile-menu__item">
-								<a class="mobile-menu__link" href="/">
-									<span class="ja-title">TOP</span>
-								</a>
+								<a class="mobile-menu__link" href="/">TOP</a>
 							</li>
 							<li class="mobile-menu__item">
-								<a class="mobile-menu__link" href="/activity/">
-									<span class="ja-title">活動内容</span>
-								</a>
+								<a class="mobile-menu__link" href="/activity/">活動内容</a>
 							</li>
 							<li class="mobile-menu__item">
-								<a class="mobile-menu__link" href="/outline/">
-									<span class="ja-title">協会概要</span>
-								</a>
+								<a class="mobile-menu__link" href="/outline/">協会概要</a>
 							</li>
 							<li class="mobile-menu__item">
-							<a class="mobile-menu__link" href="/news/">
-								<span class="ja-title">お知らせ</span>
-							</a>
+								<a class="mobile-menu__link" href="/news/">お知らせ</a>
 							</li>
 							<li class="mobile-menu__item">
-							<a class="mobile-menu__link" href="/column/">
-								<span class="ja-title">コラム</span>
-							</a>
+								<a class="mobile-menu__link" href="/column/">コラム</a>
 							</li>
 							<li class="mobile-menu__item">
-							<a class="mobile-menu__link" href="/membership/">
-								<span class="ja-title">会員登録</span>
-							</a>
+								<a class="mobile-menu__link" href="/membership/">会員登録</a>
 							</li>
 							<li class="mobile-menu__item">
-							<a class="mobile-menu__link" href="/contact/">
-								<span class="ja-title">お問い合わせ</span>
-							</a>
+								<a class="mobile-menu__link" href="/contact/">お問い合わせ</a>
 							</li>
 						</ul>
 					</div>

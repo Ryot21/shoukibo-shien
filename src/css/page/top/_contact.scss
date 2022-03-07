@@ -61,7 +61,7 @@
 			}
 			&__text {
 				text-align: start;
-				padding-bottom:10px;
+				padding-bottom:25px;
 				@include min-screen($break_point_max) {
 					padding-bottom:30px;
 				}
