@@ -233,7 +233,7 @@ get_header();
 					<!-- 右 -->
 					<div class="partner-block_flex__right">
 					<h3 class="partner-block_flex__right__title">コストの削減</h3>
-					<p class="partner-block_flex__right__text">日々の活動の中の販管費の削減 税務上の経費漏れが無いように情報共有</p>
+					<p class="partner-block_flex__right__text">日々の活動の中の販管費の削減税務上の経費漏れが無いように情報共有</p>
 					</div>
 				</div>
 				</a>
