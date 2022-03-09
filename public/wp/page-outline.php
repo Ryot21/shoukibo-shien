@@ -38,7 +38,7 @@ Template Name: OUTLINE template
             </dl>
             <dl class="c-table__row">
               <dt>発起人</dt>
-              <dd>江本 一朗</dd>
+              <dd>江本 一郎</dd>
             </dl>
             <dl class="c-table__row">
               <dt>活動内容</dt>

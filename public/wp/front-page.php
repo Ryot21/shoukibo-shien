@@ -196,8 +196,7 @@ get_header();
 						<!-- 右 -->
 						<div class="partner-block_flex__right">
 						<h3 class="partner-block_flex__right__title">小規模事業者に有益な情報の発信</h3>
-						<p class="partner-block_flex__right__text">会社員時代との違いや事業主としての注意点
-								個人事業主から定期的に要望を頂き、回答を公開している</p>
+						<p class="partner-block_flex__right__text">会社員時代との違い、事業主として活動する注意点やお得情報などを定期的に更新しております。</p>
 						</div>
 					</div>
 					</a>
@@ -215,7 +214,7 @@ get_header();
 							<!-- 右 -->
 							<div class="partner-block_flex__right">
 							<h3 class="partner-block_flex__right__title">士業専門家による情報共有</h3>
-							<p class="partner-block_flex__right__text">協会は税理士、弁護士、司法書士、社労士などの専門士業と業務提携し、定期的に会員様にセミナー形式で情報提供をしております。</p>
+							<p class="partner-block_flex__right__text">当協会は税理士、弁護士、司法書士、社労士などの専門士業と提携し、定期的に会員様にセミナーやコラムなどの形式で情報発信をしております。</p>
 							</div>
 						</div>
 					</a>
@@ -270,7 +269,7 @@ get_header();
 					<!-- 右 -->
 					<div class="partner-block_flex__right">
 					<h3 class="partner-block_flex__right__title">法人化サポート</h3>
-					<p class="partner-block_flex__right__text">一定の売上を上げた事業主様は法人化のサポートもしております。</p>
+					<p class="partner-block_flex__right__text">一定の売上を超えると税金対策などで法人化が必要になる事業主様もいます。法人化のサポートも致します。</p>
 					</div>
 				</div>
 				</a>
@@ -288,7 +287,7 @@ get_header();
 					<!-- 右 -->
 					<div class="partner-block_flex__right">
 					<h3 class="partner-block_flex__right__title">提携先や案件の紹介</h3>
-					<p class="partner-block_flex__right__text">会員様は士業との顧問契約やスポットのご依頼を特別価格で受けて頂くことが出来ます。</p>
+					<p class="partner-block_flex__right__text">協会の持っている人脈を屈指し、会員様の本業につながる案件のご紹介をします。また、必要あれば協会の提携している士業を特別価格でご紹介します。</p>
 					</div>
 				</div>
 				</a>

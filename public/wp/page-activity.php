@@ -26,9 +26,9 @@ Template Name: ACTIVITY template
             テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
           </p> -->
         </section>
-        <!-- コストや財務問題の解決 -->
+        <!-- 財務相談 -->
         <section id="activity-2" class="p-activity-block section-block">
-          <h2 class="p-activity-block_title">財務問題の解決</h2>
+          <h2 class="p-activity-block_title">財務相談</h2>
           <div class="p-activity-block-wrap">
             <div class="p-activity-block_img activity-2">
               <img src="<?php bloginfo('template_url'); ?>/images/activity/cosutomondai@2x.png" class="" alt="コストや財務問題の解決">
