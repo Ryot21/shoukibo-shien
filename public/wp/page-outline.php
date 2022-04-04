@@ -42,11 +42,14 @@ Template Name: OUTLINE template
             </dl>
             <dl class="c-table__row">
               <dt>活動内容</dt>
-              <dd>テキストテキストテキストテキスト</dd>
-            </dl>
-            <dl class="c-table__row">
-              <dt>活動内容</dt>
-              <dd>小規模事業者支援、情報発信</dd>
+              <dd>
+                小規模事業者支援<br>
+                情報発信<br>
+                コストの削減<br>
+                事業主様の税金対策<br>
+                国民健康保険や国民年金保険料の削減サポート<br>
+                その他さまざまな経費削減サポート
+              </dd>
             </dl>
           </div>
         </div>

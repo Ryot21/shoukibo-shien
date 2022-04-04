@@ -162,13 +162,13 @@ get_header();
 					ご不明な点は<br>
 					お気軽にお問い合わせください
 				</p>
-				<p class="contact-block_flex__right__text">小規模事業者支援協会は、サンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキスト</p>
+				<p class="contact-block_flex__right__text">小規模事業者支援協会は、フリーランスのみなさまに寄り添ったサポート致します。当協会に関してご不明点やご質問などありましたら、ご気軽にご質問ください。</p>
 				<div class="section-block_flex">
 					<div class="section-block_flex__btn">
-					<a href="#">会員登録</a>
+					<a href="/membership/">会員登録</a>
 					</div>
 					<div class="section-block_flex__btn contact-box">
-					<a href="#">お問い合わせ</a>
+					<a href="/contact/">お問い合わせ</a>
 					</div>
 				</div>
 				</div>
