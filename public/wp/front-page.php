@@ -41,8 +41,8 @@ get_header();
 				<div class="intro-block_flex">
 					<!-- 左 -->
 					<div class="intro-block_flex__left">
-					<p class="intro-block_flex__left__text">一般社団法人小規模事業者支援協会は主に小規模事業者の発展に役立つ情報を提供するプラットホームとなることを目指し、小規模事業者の社会地位や生活水準の向上を目的としています。小規模事業者が活動していく上での課題や専門的のある問題をクリアし、 本業に専念できるようサポート致します。</p>
-					<p style="text-align: center;">一般社団法人 小規模事業者支援協会<br>発起人 江本一朗</p>
+					<p class="intro-block_flex__left__text">一般社団法人小規模事業者支援協会は主に小規模事業者の発展に役立つ情報を提供するプラットホームとなることを目指し、小規模事業者の社会地位や生活水準の向上を目的としています。小規模事業者が活動していく上での課題や専門的な問題をクリアし、 本業に専念できるようサポート致します。</p>
+					<p style="text-align: center;">一般社団法人 小規模事業者支援協会<br>発起人 江本一郎</p>
 					</div>
 					<!-- 右 -->
 					<div class="intro-block_flex__right">
