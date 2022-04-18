@@ -2003,7 +2003,7 @@ article
 }
 
 .activity .p-activity-block_img {
-  width: 1000px;
+  width: 100%;
   height: 100%;
   background-size: cover;
   background-position: center;
@@ -3009,6 +3009,10 @@ article
 }
 
 @media screen and (min-width: 735px) {
+  .SP {
+    display: none;
+  }
+
   .SP-br {
     display: none;
   }
@@ -3899,6 +3903,10 @@ article
 }
 
 @media screen and (max-width: 735px) {
+  .PC {
+    display: none;
+  }
+
   .PC-br {
     display: none;
   }

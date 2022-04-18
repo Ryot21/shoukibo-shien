@@ -1,6 +1,16 @@
 html {
 	box-sizing: border-box;
 }
+.SP {
+  @include min-screen($break_point_max) {
+    display: none;
+  }
+}
+.PC {
+  @include max-screen($break_point_max) {
+    display: none;
+  }
+}
 
 .SP-br {
   @include min-screen($break_point_max) {
