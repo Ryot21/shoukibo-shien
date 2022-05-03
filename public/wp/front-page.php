@@ -47,7 +47,7 @@ get_header();
 					<!-- 右 -->
 					<div class="intro-block_flex__right">
 					<div class="intro-block_flex__right__img">
-						<img src="<?php bloginfo('template_url'); ?>/images/pic/goaisatu.jpeg" alt="ご挨拶">
+						<img src="<?php bloginfo('template_url'); ?>/images/pic/goaisatu-kaizen-min.png" alt="ご挨拶">
 					</div>
 					</div>
 				</div>
@@ -153,7 +153,7 @@ get_header();
 				<!-- 左 -->
 				<div class="contact-block_flex__left">
 				<div class="contact-block_flex__left__img">
-					<img src="<?php bloginfo('template_url'); ?>/images/pic/top-contact.jpeg" alt="お問い合わせ">
+					<img src="<?php bloginfo('template_url'); ?>/images/pic/top-contact-kaizen-min.png" alt="お問い合わせ">
 				</div>
 				</div>
 				<!-- 右 -->
@@ -185,7 +185,7 @@ get_header();
 			<ul class="partner-lists">
 				<!-- 小規模事業者に有益な情報の発信 -->
 				<li class="partner-list">
-					<a class="partner-list__link" href="#">
+					<!-- <a class="partner-list__link" href="#"> -->
 					<div class="partner-block_flex">
 						<!-- 左 -->
 						<div class="partner-block_flex__left">
@@ -199,11 +199,11 @@ get_header();
 						<p class="partner-block_flex__right__text">会社員時代との違い、事業主として活動する注意点やお得情報などを定期的に更新しております。</p>
 						</div>
 					</div>
-					</a>
+					<!-- </a> -->
 				</li>
 				<!-- 士業専門家による情報共有 -->
 				<li class="partner-list">
-					<a class="partner-list__link" href="#">
+					<!-- <a class="partner-list__link" href="#"> -->
 						<div class="partner-block_flex">
 							<!-- 左 -->
 							<div class="partner-block_flex__left">
@@ -217,11 +217,11 @@ get_header();
 							<p class="partner-block_flex__right__text">当協会は税理士、弁護士、司法書士、社労士などの専門士業と提携し、定期的に会員様にセミナーやコラムなどの形式で情報発信をしております。</p>
 							</div>
 						</div>
-					</a>
+					<!-- </a> -->
 				</li>
 			<!-- コストの削減 -->
 			<li class="partner-list">
-				<a class="partner-list__link" href="#">
+				<!-- <a class="partner-list__link" href="#"> -->
 				<div class="partner-block_flex">
 					<!-- 左 -->
 					<div class="partner-block_flex__left">
@@ -235,11 +235,11 @@ get_header();
 					<p class="partner-block_flex__right__text">日々の活動の中の販管費の削減税務上の経費漏れが無いように情報共有</p>
 					</div>
 				</div>
-				</a>
+				<!-- </a> -->
 			</li>
 			<!-- 財務問題の解決 -->
 			<li class="partner-list">
-				<a class="partner-list__link" href="#">
+				<!-- <a class="partner-list__link" href="#"> -->
 				<div class="partner-block_flex">
 					<!-- 左 -->
 					<div class="partner-block_flex__left">
@@ -253,12 +253,12 @@ get_header();
 					<p class="partner-block_flex__right__text">個人事業主は年金が少ない…将来の為にiDeCoやNISAをやりたいが内容わからない…将来の年金額を資産して欲しい…協会と提携のファイナンシャルプランナーや社労士が解決します。</p>
 					</div>
 				</div>
-				</a>
+				<!-- </a> -->
 			</li>
 
 			<!-- 法人化サポート -->
 			<li class="partner-list">
-				<a class="partner-list__link" href="#">
+				<!-- <a class="partner-list__link" href="#"> -->
 				<div class="partner-block_flex">
 					<!-- 左 -->
 					<div class="partner-block_flex__left">
@@ -272,11 +272,11 @@ get_header();
 					<p class="partner-block_flex__right__text">一定の売上を超えると税金対策などで法人化が必要になる事業主様もいます。法人化のサポートも致します。</p>
 					</div>
 				</div>
-				</a>
+				<!-- </a> -->
 			</li>
 			<!-- 提携先や案件の紹介 -->
 			<li class="partner-list">
-				<a class="partner-list__link" href="#">
+				<!-- <a class="partner-list__link" href="#"> -->
 				<div class="partner-block_flex">
 					<!-- 左 -->
 					<div class="partner-block_flex__left">
@@ -290,7 +290,7 @@ get_header();
 					<p class="partner-block_flex__right__text">協会の持っている人脈を屈指し、会員様の本業につながる案件のご紹介をします。また、必要あれば協会の提携している士業を特別価格でご紹介します。</p>
 					</div>
 				</div>
-				</a>
+				<!-- </a> -->
 			</li>
 			</ul>
 		</section>
