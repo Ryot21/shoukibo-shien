@@ -98,56 +98,6 @@ function anchorLink() {
 
 
 
-//スクロール途中からヘッダーを出現させるための設定を関数でまとめる(1/3)
-    // function FixedAnime() {
-    //   var elemTop = $('#area-3').offset().top;//#area-3の位置まできたら
-    //   var scroll = $(window).scrollTop();
-    //   if(scroll <= 680){//上から580pxスクロールされたら $('#header').addClass('DownMove');//DownMoveというクラス名を除き } else if (scroll >= elemTop){
-    //       $('.pc-nav__lists').removeClass('UpMove');//#headerについているUpMoveというクラス名を除く
-    //       $('.pc-nav__lists').addClass('DownMove');//#headerについているDownMoveというクラス名を付与
-
-    //     }else{
-    //       if($('.pc-nav__lists').hasClass('DownMove')){//すでに#headerにDownMoveというクラス名がついていたら
-    //         $('.pc-nav__lists').removeClass('DownMove');//DownMoveというクラス名を除き
-    //         $('.pc-nav__lists').addClass('UpMove');//UpnMoveというクラス名を付与
-    //       }
-    //     }
-    // }
-    // 画面をスクロールをしたら動かしたい場合の記述
-    // $(window).scroll(function () {
-    //   FixedAnime();/* スクロール途中からヘッダーを出現させる関数を呼ぶ*/
-    // });
-//スクロール途中からヘッダーを出現させるための設定を関数でまとめる(2/3)
-    // function FixedAnimeSP() {
-    //   var elemTop = $('#area-3').offset().top;
-    //   var scroll = $(window).scrollTop();
-    //   if(scroll <= 580){
-    //       $('#js-menuToggle').removeClass('UpMove');
-    //       $('#js-menuToggle').addClass('DownMove');
-    //   }else{
-    //       if($('#js-menuToggle').hasClass('DownMove')){
-    //         $('#js-menuToggle').removeClass('DownMove');
-    //         $('#js-menuToggle').addClass('UpMove');
-    //       }
-    //   }
-    // }
-    // $(window).scroll(function () {  FixedAnimeSP(); });
-//スクロール途中からヘッダーを出現させるための設定を関数でまとめる(3/3)
-    // function FixedAnimeLINE() {
-    //   var elemTop = $('#area-3').offset().top;
-    //   var scroll = $(window).scrollTop();
-    //   if(scroll <= 580){
-    //       $('#js-lineToggle').removeClass('UpMove');
-    //       $('#js-lineToggle').addClass('DownMove');
-    //   }else{
-    //       if($('#js-lineToggle').hasClass('DownMove')){
-    //         $('#js-lineToggle').removeClass('DownMove');
-    //         $('#js-lineToggle').addClass('UpMove');
-    //       }
-    //   }
-    // }
-    // $(window).scroll(function () {  FixedAnimeLINE(); });
-
 
 
 //アコーディオンパネル > 「FAQ」に使用
@@ -195,56 +145,6 @@ function anchorLink() {
 
 
 
-//Loadingに使用（1/3）
-    //テキストのカウントアップの設定
-    // var bar = new ProgressBar.Line(splash_text, {//id名を指定
-    //   strokeWidth: 0,//進捗ゲージの太さ
-    //   duration: 1500,//時間指定(1000＝1秒)
-    //   trailWidth: 0,//線の太さ
-    //   text: {//テキストの形状を直接指定	
-    //     style: {//天地中央に配置
-    //       position:'absolute',
-    //       left:'50%',
-    //       top:'50%',
-    //       padding:'0',
-    //       margin:'0',
-    //       transform:'translate(-50%,-50%)',
-    //       'font-size':'1.2rem',
-    //       color:'#fff',
-    //     },
-    //     autoStyleContainer: false //自動付与のスタイルを切る
-    //   },
-    //   step: function(state, bar) {
-    //     bar.setText(Math.round(bar.value() * 100) + ' %'); //テキストの数値
-    //   }
-    // });
-    // //アニメーションスタート
-    // bar.animate(1.0, function () {//バーを描画する割合を指定します 1.0 なら100%まで描画します
-    //   $("#splash").delay(500).fadeOut(800);//アニメーションが終わったら#splashエリアをフェードアウト
-    // }); 
-
-//Loadingに使用（2/3）
-    //logoの表示
-    // $(window).on('load',function(){
-    //   $("#splash").delay(1500).fadeOut('slow');//ローディング画面を1.5秒（1500ms）待機してからフェードアウト
-    //   $("#splash_logo").delay(1200).fadeOut('slow');//ロゴを1.2秒（1200ms）待機してからフェードアウト
-    // });
-
-//Loadingに使用（3/3）
-    // $(function(){
-    //   // 1回目のアクセス
-    //   if($.cookie("access") == undefined) {
-    //     //最初にアクセスしたときにはここに書いたアニメーションのJSが動く
-    //     $.cookie("access","onece");
-    //     $("#splash").css("display","block")
-    //   // 2回目以降は動かないようにするけど最初は動かす
-    //   } else {
-    // $("#splash").css("display","none")
-    //     // 2回目以降は動かないようにする
-    //   }
-    // });
-
-
 $('.c-slider').slick({
 		fade:true,//切り替えをフェードで行う。初期値はfalse。
 		autoplay: true,//自動的に動き出すか。
@@ -266,3 +166,4 @@ $('.c-slider').slick({
 $('.c-slider').on('touchmove', function(event, slick, currentSlide, nextSlide){
     $('.c-slider').slick('slickPlay');
 });
+
