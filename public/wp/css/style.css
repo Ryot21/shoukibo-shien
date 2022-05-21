@@ -475,7 +475,7 @@ body {
 }
 
 .l-container__inner {
-  padding: 0 15px;
+  padding: 0 20px;
   margin: auto;
 }
 
@@ -496,7 +496,7 @@ body {
 }
 
 .l-container_sec__inner {
-  padding: 0 15px;
+  padding: 0 20px;
   margin: auto;
 }
 
@@ -513,7 +513,7 @@ body {
 }
 
 .l-container_thr__inner {
-  padding: 0 15px;
+  padding: 0 20px;
   margin: auto;
 }
 
@@ -807,7 +807,7 @@ l-sec-content
 }
 
 .c-breadcrumb__inner {
-  padding: 0 15px;
+  padding: 0 20px;
   margin: auto;
 }
 
@@ -1996,6 +1996,7 @@ article
   color: #5383BC;
   text-align: center;
   padding-bottom: 30px;
+  line-height: 1.2;
 }
 
 .activity .p-activity-block-wrap {

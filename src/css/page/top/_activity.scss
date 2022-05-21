@@ -97,6 +97,7 @@
 			color: $blue;
 			text-align: center;
 			padding-bottom: 30px;
+			line-height: 1.2;
 			@include min-screen($break_point_max) {
 				padding-bottom: 20px;
 			}
